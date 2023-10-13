@@ -5,10 +5,12 @@ import Header from "../components/Header.astro";
 ---
 
 <html lang="he" dir="rtl">
-  <BaseHead />
+  <BaseHead title="מעקף" description="תוכנית מעקף" />
   <body>
     <Header />
-    <slot />
+    <main class="max-w-2xl mx-auto py-2 prose">
+      <slot />
+    </main>
     <Footer />
   </body>
 </html>
