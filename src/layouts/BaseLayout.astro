@@ -9,11 +9,8 @@ import SideNav from "../components/SideNav.astro";
   <BaseHead title="מעקף" description="האתר של קהילת מעקף - קוד פתוח בישראל" />
   <body>
     <Header />
-    <main class="relative grid grid-cols-[1fr_,_10fr]">
-      <SideNav />
-      <div class="mx-8 py-2 prose">
-        <slot />
-      </div>
+    <main class="mx-auto py-2 prose">
+      <slot />
     </main>
     <Footer />
   </body>
