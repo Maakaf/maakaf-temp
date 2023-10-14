@@ -1,10 +1,5 @@
 ---
 layout: "../layouts/BaseLayout.astro"
-title: Newbies
-linkTitle: Newbies
-menu: { main: { weight: 100 } }
-type: "docs"
-weight: 20
 ---
 
 <h1>ברוכים הבאים לקהילת "מעקף"!</h1>
