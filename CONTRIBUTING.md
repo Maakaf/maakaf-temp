@@ -1,119 +1,99 @@
-# Contributing Guide
+# מדריך תרומה
 
-Thank you for investing your time in contributing to our project! Any contribution you make will be appreciated :sparkles:.
+תודה על הנכונות להשקיע זמן ולתרום לפרויקט!
+קראו את ה-[Code of Conduct](./CODE_OF_CONDUCT.md) כדי שנוכל לשמור על הקהיל שלנו נעימה ומכבדת.
 
-Read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community approachable and respectable.
+## תורמים חדשים
 
-In this guide you will get an overview of the contribution workflow from opening an issue, creating a PR, reviewing, and merging the PR.
+אם מעולם לא תרמתם לקוד פתוח, צפו [בסרטון ההדרכה](https://youtu.be/IVNxfbHNHZk?si=K7eB4yc0ASt59W_I) הקצר שמדגים תרומה ראשונית לקוד פתוח בפרויקט התרגול של הקהילה.
 
-## New contributor guide
-
-To get an overview of the project, read the [README](README.md). Here are some resources to help you get started with open source contributions:
-
+אם יש לכם כח, הנה עוד מידע רלוונטי בנושא:
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
 - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
-
 - [GitHub Help Documentation](https://help.github.com/)
 - [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/)
 
-## Getting started
+## תהליך תרומה לפרויקט
 
-### Fork the repository
+### צרו Fork לריפו
 
-Fork the project [on GitHub](https://github.com/Maakaf/Maakaf-temporary)
+צרו בגיטהאב שלכם [Fork לפרויקט](https://github.com/Maakaf/maakaf-temp) 
 
-### Clone the project
+### צרו Clone לפרויקט
 
-Clone your fork locally. Do not clone the original repository unless you plan to become a long-term contributor and have been given permission to do so.
-
+צרו Clone מקומי ל-Fork על ידי:
 ```shell
-git clone https://github.com/[your-github-user]/Maakaf-temporary.git
-cd Maakaf-temporary
+git clone https://github.com/[your-github-user]/maakaf-temp.git
+cd maakaf-temp
 ```
 
-### Install dependencies
+### התקינו ספריות
 
-Install the project dependencies:
-
+התקינו את כל הספריות הנחוצות לפרויקט על ידי:
 ```shell
 npm i
 # or:
 yarn
 ```
 
-### Create a branch
+### צרו Branch
 
-Create and check out your feature branch:
-
+צרו Branch עבור הפיצ'ר שתרצו לעבוד עליו
 ```shell
 git checkout -b my-new-feature
 ```
+### בצעו את השינויים מקומית
 
-### Make changes locally
+זה הזמן לקודד!
 
-### Commit your changes
+### עשו Commit לשינויים
 
-Commit your changes:
-
+עשו Commit לשינויים שביצעתם על ידי:
 ```shell
 git commit -m 'Add some feature'
 ```
 
-### Push your changes
+### דחפו את השינויים
 
-Push your changes to your fork:
-
+דחפו את השינויים ל-Fork שלכם
 ```shell
 git push -u origin my-new-feature
 ```
 
-### Create a pull request
+### פתחו Pull request
 
-When you're finished with the changes, create a pull request, also known as a PR.
+כשסיימתם לעבוד על השינויים שלכם, פתחו PR בפרויקט.
 
-<!-- - Fill the "Ready for review" template so that we can review your PR. This template helps reviewers understand your changes as well as the purpose of your pull request. ?? check this..-->
+### קוד ריוויו
 
-## Code reviews
+כל התרומות לפרויקט עוברות קוד ריוויו על ידי מנהלי הפרויקט לפני שהן ממוזגות אליו.
 
-All submissions, including submissions by project members, require review. We
-use GitHub pull requests for this purpose. Consult
-[GitHub Help](https://help.github.com/articles/about-pull-requests/) for more
-information on using pull requests.
+### איך Issues עובדים
 
-### Issues
+#### יצירת Issue חדש
 
-#### Create a new issue
+אם זיהיתם בעיה בקוד שאתם מאמינים שצריך לתקן, או שיש לכם רעיון לפיצ'ר חדש, בדקו את רשימת האישיוז הקיימים פה [Issues](https://github.com/Maakaf/maakaf-temp/issues)
+אם אין אישיו פתוח שמתייחס לבעיה שזיהיתם, פתחו אחד חדש.
+תנו לאישיו כותרת ותיאור ברורים, הסבירו איך לשחזר את הבעיה, צרפו צילומי מסך, וספקו כל מידע שיעזור לאחרים להבין את כוונתכם.
 
-If you spot a problem in the codebase that you believe needs to be fixed, or you have an idea for a new feature, take a look at the [Issues](https://github.com/Maakaf/Maakaf-temporary/issues).
+#### פתירת Issue קיים
 
-If you can't find an open issue addressing the problem, open a new one. Be sure to include a title and clear description, as much relevant information as possible, and a code sample or an executable test case demonstrating the expected behavior that is not occurring.
+עברו על האישיוז הקיימים [Issues](https://github.com/Maakaf/maakaf-temp/issues) ומצאו אחד שמעניין אתכם.
+וודאו שאין מישהו שמטפל באישיו הזה כבר, והגיבו עליו בבקשה לקבל אותו.
+לאחר שהוגדרתם כ-assignee לאישיו, תוכלו להתחיל לעבוד עליו.
+עקבו אחר השלבים שתוארו למעלה.
 
-#### Solve an issue
+### ה-PR שלכם מורג'ג'
 
-Scan through our [existing issues](https://github.com/Maakaf/Maakaf-temporary/issues) to find one that interests you. You can narrow down the search using `labels` and `projects` to find issues that need attention.
+הידד! :tada::tada: 
+ברגע שה-PR שלכם מוזג אל הפרויקט, התרומה שלכם תופיע לייב באתר ואפשר יהיה לראות אותה [בקוד של הפרויקט ](https://github.com/Maakaf/maakaf-temp)
 
-Then, fork the repository (if this is your first contribution to this project. Otherwise, sync your fork), create a branch, and make your changes.
+## כללי הקהילה
 
-Finally, open a pull request with the changes.
+הפרויקט הזה עובד לפי [Google's Open Source Community Guidelines](https://opensource.google.com/conduct/).
 
-### Your PR is merged
-
-Congratulations :tada::tada: The GitHub team thanks you :sparkles:.
-
-Once your PR is merged, your contributions will be publicly visible on the [Maakaf-temporary](https://github.com/Maakaf/Maakaf-temporary).
-
-## Community Guidelines
-
-This project follows
-[Google's Open Source Community Guidelines](https://opensource.google.com/conduct/).
-
-### Credits
-
-This Contributing Guide is adapted from [GitHub docs contributing guide](https://github.com/github/docs/blob/main/CONTRIBUTING.md?plain=1).
-
-## YouTube
-
-- [A guide made by our community member](https://www.youtube.com/watch?v=IVNxfbHNHZk)
+### קרדיטים
+המדריך הזה הוא בהשראת [GitHub docs contributing guide](https://github.com/github/docs/blob/main/CONTRIBUTING.md?plain=1).
 
 ## Contributor License Agreement
 
@@ -126,5 +106,3 @@ your current agreements on file or to sign a new one.
 You generally only need to submit a CLA once, so if you've already submitted one
 (even if it was for a different project), you probably don't need to do it
 again.
-
-# Contributers
