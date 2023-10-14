@@ -2,23 +2,29 @@
 import HeaderLink from "./HeaderLink.astro";
 ---
 
-<nav class="navbar bg-base-100">
+<nav class="flex place-items-center bg-base-100">
   <!-- LOGO -->
-  <div class="">
+  <div>
     <a href="/" class="btn btn-ghost normal-case text-xl">מעקף</a>
   </div>
 
   <!-- LINKS -->
-  <div class="flex-none navbar-start">
+  <div class="">
     <ul class="menu menu-horizontal">
       <li>
-        <HeaderLink>לינק 1</HeaderLink>
+        <HeaderLink href="/newbies">מתחילים</HeaderLink>
       </li>
       <li>
-        <HeaderLink>לינק 2</HeaderLink>
+        <HeaderLink href="/members">חברים</HeaderLink>
       </li>
       <li>
-        <HeaderLink>לינק 3</HeaderLink>
+        <HeaderLink href="/maintainers">מתחזקים</HeaderLink>
+      </li>
+      <li>
+        <HeaderLink href="/sponsers">ספונסרים</HeaderLink>
+      </li>
+      <li>
+        <HeaderLink href="/recruiters">מגייסים</HeaderLink>
       </li>
     </ul>
   </div>
