@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 const newbies = await getCollection("newbies");
 ---
 
-<div class="sticky h-fit shadow-2xl p-4 w-[24rem] m-4 border">
+<div class="h-fit shadow-2xl p-4 w-[250px] m-4 border">
   <h1>NAVIGATION</h1>
   <div class="menu menu-vertical gap-4">
     {newbies.map((n) => <a href={`/newbies/${n.slug}`}>{n.data.title}</a>)}
