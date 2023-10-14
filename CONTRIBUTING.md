@@ -8,6 +8,7 @@
 אם מעולם לא תרמתם לקוד פתוח, צפו [בסרטון ההדרכה](https://youtu.be/IVNxfbHNHZk?si=K7eB4yc0ASt59W_I) הקצר שמדגים תרומה ראשונית לקוד פתוח בפרויקט התרגול של הקהילה.
 
 אם יש לכם כח, הנה עוד מידע רלוונטי בנושא:
+
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
 - [Understanding the GitHub flow](https://guides.github.com/introduction/flow/)
 - [GitHub Help Documentation](https://help.github.com/)
@@ -17,11 +18,12 @@
 
 ### צרו Fork לריפו
 
-צרו בגיטהאב שלכם [Fork לפרויקט](https://github.com/Maakaf/maakaf-temp) 
+צרו בגיטהאב שלכם [Fork לפרויקט](https://github.com/Maakaf/maakaf-temp)
 
 ### צרו Clone לפרויקט
 
 צרו Clone מקומי ל-Fork על ידי:
+
 ```shell
 git clone https://github.com/[your-github-user]/maakaf-temp.git
 cd maakaf-temp
@@ -30,18 +32,24 @@ cd maakaf-temp
 ### התקינו ספריות
 
 התקינו את כל הספריות הנחוצות לפרויקט על ידי:
+
 ```shell
+# with npm
 npm i
-# or:
+# with yarn
 yarn
+# with pnpm
+pnpm i
 ```
 
 ### צרו Branch
 
 צרו Branch עבור הפיצ'ר שתרצו לעבוד עליו
+
 ```shell
 git checkout -b my-new-feature
 ```
+
 ### בצעו את השינויים מקומית
 
 זה הזמן לקודד!
@@ -49,6 +57,7 @@ git checkout -b my-new-feature
 ### עשו Commit לשינויים
 
 עשו Commit לשינויים שביצעתם על ידי:
+
 ```shell
 git commit -m 'Add some feature'
 ```
@@ -56,6 +65,7 @@ git commit -m 'Add some feature'
 ### דחפו את השינויים
 
 דחפו את השינויים ל-Fork שלכם
+
 ```shell
 git push -u origin my-new-feature
 ```
@@ -85,7 +95,7 @@ git push -u origin my-new-feature
 
 ### ה-PR שלכם מורג'ג'
 
-הידד! :tada::tada: 
+הידד! :tada::tada:
 ברגע שה-PR שלכם מוזג אל הפרויקט, התרומה שלכם תופיע לייב באתר ואפשר יהיה לראות אותה [בקוד של הפרויקט ](https://github.com/Maakaf/maakaf-temp)
 
 ## כללי הקהילה
@@ -93,6 +103,7 @@ git push -u origin my-new-feature
 הפרויקט הזה עובד לפי [Google's Open Source Community Guidelines](https://opensource.google.com/conduct/).
 
 ### קרדיטים
+
 המדריך הזה הוא בהשראת [GitHub docs contributing guide](https://github.com/github/docs/blob/main/CONTRIBUTING.md?plain=1).
 
 ## Contributor License Agreement
