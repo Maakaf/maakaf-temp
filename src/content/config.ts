@@ -42,5 +42,12 @@ const sponsors = defineCollection({
   }),
 });
 
-export const collections = { newbies, members, maintainers, recruiters, sponsors };
+export const collections = {
+  newbies,
+  members,
+  maintainers,
+  recruiters,
+  sponsors,
+};
 
+export type CollectionType = keyof typeof collections;

@@ -1,22 +1,24 @@
 ---
 import { getCollection } from "astro:content";
-import type { CollectionType } from "../layouts/ArticleLayout.astro";
+import type { CollectionType } from "../content/config";
 
 type Props = {
   collection: CollectionType;
 };
+
 const { collection } = Astro.props;
 
-const content = await getCollection("");
+const content = await getCollection(collection);
 ---
 
 <div class="h-fit shadow-2xl p-4 w-[250px] m-4 border">
   <h1>NAVIGATION</h1>
   <div class="menu menu-vertical gap-4">
     {
-      content.map((n) => (
-        <a href={`/${collection}/${n.slug}`}>{n.data.title}</a>
-      ))
+      content?.length > 0 &&
+        content.map((n) => (
+          <a href={`/${collection}/${n.slug}`}>{n.data.title}</a>
+        ))
     }
   </div>
 </div>
