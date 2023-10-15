@@ -3,6 +3,13 @@ import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import SideNav from "../components/SideNav.astro";
+import type { CollectionType } from "../content/config";
+
+type Props = {
+  collection: CollectionType;
+};
+
+const { collection } = Astro.props;
 ---
 
 <html lang="he" dir="rtl">
@@ -10,7 +17,7 @@ import SideNav from "../components/SideNav.astro";
   <body>
     <Header />
     <main class="flex flex-col md:flex-row">
-      <SideNav collection="newbies" />
+      <SideNav collection={collection} />
       <article class="mx-6 py-2 prose">
         <slot />
       </article>

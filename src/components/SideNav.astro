@@ -5,6 +5,7 @@ import type { CollectionType } from "../content/config";
 type Props = {
   collection: CollectionType;
 };
+
 const { collection } = Astro.props;
 
 const content = await getCollection(collection);
@@ -14,9 +15,10 @@ const content = await getCollection(collection);
   <h1>NAVIGATION</h1>
   <div class="menu menu-vertical gap-4">
     {
-      content.map((n) => (
-        <a href={`/${collection}/${n.slug}`}>{n.data.title}</a>
-      ))
+      content?.length > 0 &&
+        content.map((n) => (
+          <a href={`/${collection}/${n.slug}`}>{n.data.title}</a>
+        ))
     }
   </div>
 </div>
