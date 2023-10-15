@@ -7,27 +7,29 @@ type Props = {
 const { title, text, href } = Astro.props;
 ---
 
-<a
-  {href}
-  class="flex flex-col items-center justify-center w-full md:w-fit p-4 border bg-gradient-to-tl from-[#335C81] via-indigo-200 to-white rounded-lg outline-1 outline-primary-content text-primary-content hover:scale-110 transition"
->
-  <h3 class="uppercase font-extrabold text-lg">{title}</h3>
-
-  <p class="font-bold">{text}</p>
-
-  <svg
-    class="block"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    width="24px"
-    height="24px"
-    viewBox="0 0 64 64"
-    aria-hidden="true"
-    role="img"
-    class="iconify iconify--emojione-monotone"
-    preserveAspectRatio="xMidYMid meet"
-    ><path
-      d="M32 2C15.432 2 2 15.432 2 32c0 16.568 13.432 30 30 30s30-13.432 30-30C62 15.432 48.568 2 32 2zm17 35.428H30.307V48L15 32l15.307-16v11.143H49v10.285z"
-      fill="#000000"></path></svg
+<div>
+  <a
+    {href}
+    class="flex flex-col items-center justify-center w-full md:w-fit p-4 border bg-gradient-to-tl from-[#335C81] via-indigo-200 to-white rounded-lg outline-1 outline-primary-content text-primary-content hover:scale-110 transition"
   >
-</a>
+    <h3 class="uppercase font-extrabold text-lg">{title}</h3>
+
+    <p class="font-bold">{text}</p>
+
+    <svg
+      class="block"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      width="24px"
+      height="24px"
+      viewBox="0 0 64 64"
+      aria-hidden="true"
+      role="img"
+      class="iconify iconify--emojione-monotone"
+      preserveAspectRatio="xMidYMid meet"
+      ><path
+        d="M32 2C15.432 2 2 15.432 2 32c0 16.568 13.432 30 30 30s30-13.432 30-30C62 15.432 48.568 2 32 2zm17 35.428H30.307V48L15 32l15.307-16v11.143H49v10.285z"
+        fill="#000000"></path></svg
+    >
+  </a>
+</div>

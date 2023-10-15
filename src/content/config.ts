@@ -19,3 +19,5 @@ const newbies = defineCollection({
 });
 
 export const collections = { newbies };
+
+export type CollectionType = "newbies"; // add rest of types with ||
