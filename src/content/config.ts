@@ -18,6 +18,29 @@ const newbies = defineCollection({
   }),
 });
 
-export const collections = { newbies };
+const members = defineCollection({
+  schema: z.object({
+    title: z.string(),
+  }),
+});
 
-export type CollectionType = "newbies"; // add rest of types with ||
+const maintainers = defineCollection({
+  schema: z.object({
+    title: z.string(),
+  }),
+});
+
+const recruiters = defineCollection({
+  schema: z.object({
+    title: z.string(),
+  }),
+});
+
+const sponsors = defineCollection({
+  schema: z.object({
+    title: z.string(),
+  }),
+});
+
+export const collections = { newbies, members, maintainers, recruiters, sponsors };
+
