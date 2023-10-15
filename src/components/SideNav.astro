@@ -9,15 +9,25 @@ type Props = {
 const { collection } = Astro.props;
 
 const content = await getCollection(collection);
+
+const container_style = content
+  ? "h-fit shadow-2xl p-4 w-[250px] m-4 border"
+  : "hidden";
 ---
 
-<div class="h-fit shadow-2xl p-4 w-[250px] m-4 border">
-  <h1>NAVIGATION</h1>
+<div class={container_style}>
+  <h1 class="leading-loose font-extrabold text-xl">תוכן עניינים</h1>
+  <div class="divider"></div>
   <div class="menu menu-vertical gap-4">
     {
       content?.length > 0 &&
         content.map((n) => (
-          <a href={`/${collection}/${n.slug}`}>{n.data.title}</a>
+          <a
+            class="link link-secondary font-bold text-lg text-right"
+            href={`/${collection}/${n.slug}`}
+          >
+            {n.data.title}
+          </a>
         ))
     }
   </div>
