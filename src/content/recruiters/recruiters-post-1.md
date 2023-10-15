@@ -1,5 +1,5 @@
 ---
-title: "post-1"
+title: "recruiters-post-1"
 ---
 
 ## lorem ipsum - 1
