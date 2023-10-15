@@ -31,7 +31,7 @@ layout: "@layouts/NewbiesLayout.astro"
 יש גם [מדריך מפורט שמסביר איך לתרום לפרוייקט הזה](https://github.com/UrielOfir/os-practice).
 
 <h4>קישורים נוספים:</h4>
-<b>קבוצת עדכונים שקטנה בוואטספ:</b> <a target= "_blank" href="https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts">כאן</a><br>
+<b>קבוצת עדכונים שקטה בוואטספ:</b> <a target= "_blank" href="https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts">כאן</a><br>
 <b>קבוצת וואטספ עם צ'אט חופשי:</b> <a target= "_blank" href="https://chat.whatsapp.com/E5a59DtSaHNBwnczxVW1FY">כאן</a><br>
 <b>יש ערוץ ביוטיוב עם מדריכים והכוונות:</b> <a target= "_blank" href="https://www.youtube.com/@maakaf-os">כאן</a><br>
 <b>ופלייליסט שנועד לעזור לכם להכנס לעולם של הקוד הפתוח: </b> <a target= "_blank" href="https://youtube.com/playlist?list=PLFP8kbJw2mot-6WSKS3_4Fmmx-30w6-tj">כאן</a>
