@@ -1,5 +1,5 @@
 ---
-layout: "../layouts/NewbiesLayout.astro"
+layout: "@layouts/NewbiesLayout.astro"
 ---
 
 <h1>ברוכים הבאים לקהילת "מעקף"!</h1>

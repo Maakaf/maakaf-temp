@@ -1,0 +1,20 @@
+---
+import NewbiesLayout from "@layouts/NewbiesLayout.astro";
+import { type CollectionEntry, getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("newbies");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<"newbies">;
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<NewbiesLayout>
+  <Content />
+</NewbiesLayout>

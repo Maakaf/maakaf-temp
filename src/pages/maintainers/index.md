@@ -1,5 +1,5 @@
 ---
-layout: "../layouts/ArticleLayout.astro"
+layout: "@layouts/MaintainersLayout.astro"
 ---
 
 בקרוב יהיה כאן תוכן עבור מנהלי פרויקטים

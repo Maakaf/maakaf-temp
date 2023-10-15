@@ -1,0 +1,20 @@
+---
+import SponsorsLayout from "@layouts/SponsorsLayout.astro";
+import { type CollectionEntry, getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("sponsors");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: post,
+  }));
+}
+type Props = CollectionEntry<"sponsors">;
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+
+<SponsorsLayout>
+  <Content />
+</SponsorsLayout>

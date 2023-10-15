@@ -1,5 +1,5 @@
 ---
-title: "post-1"
+title: "members-post-1"
 ---
 
 ## lorem ipsum - 1
