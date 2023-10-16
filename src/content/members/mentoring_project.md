@@ -1,6 +1,4 @@
----
-title: "פרוייקט המנטורינג של קהילת מעקף"
----
+<div dir="rtl">
 
 ## פרוייקט המנטורינג של קהילת מעקף
 
@@ -18,7 +16,7 @@ title: "פרוייקט המנטורינג של קהילת מעקף"
 
 
 ## היכרות עם המתכנתים המנוסים בקהילה:
-אוריאל אופיר,  
-מנהל הקהילה.
-<a href="https://www.linkedin.com/in/uriel-ofir/" target="_blank">קישור לפרופיל הלינקדין של אוריאל</a>
-<a href="https://cal.com/uriel-ofir/15min" target="_blank">קישור לקביעת פגישה</a>
+| שם מלא       | קישור ליומן                                                                               | פרופיל לינקדאין                                                                                                    |
+|--------------------------------------------------------------------------------------------------------------------|---|---|
+| אופיר אוריאל | <a href="https://cal.com/uriel-ofir/15min" target="_blank">קישור לקביעת פגישה</a>         | <a href="https://www.linkedin.com/in/uriel-ofir/" target="_blank">קישור לפרופיל הלינקדין של אוריאל</a>             |
+| עידו דוד     |  <a href="https://calendly.com/idonkl100/30min" target="_blank"> קישור לקביעת פגישה </a>  | <a href="https://www.linkedin.com/in/ido-david-46b59119a" target="_blank"> קישור לפרופיל הלינקדין של עידו דוד </a> |
