@@ -19,5 +19,6 @@ title: "פרוייקט המנטורינג של קהילת מעקף"
 
 ## היכרות עם המתכנתים המנוסים בקהילה:
 אוריאל אופיר,  
-מנהל הקהילה.  
+מנהל הקהילה.
+<a href="https://www.linkedin.com/in/uriel-ofir/" target="_blank">קישור לפרופיל הלינקדין של אוריאל</a>  
 <a href="https://cal.com/uriel-ofir/15min" target="_blank">קישור לקביעת פגישה</a>
