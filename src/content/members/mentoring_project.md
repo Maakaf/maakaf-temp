@@ -18,7 +18,9 @@ title: "פרוייקט המנטורינג של קהילת מעקף"
 
 
 ## היכרות עם המתכנתים המנוסים בקהילה:
-| שם מלא       | קישור ליומן                                                                               | פרופיל לינקדאין                                                                                                    |
-|--------------------------------------------------------------------------------------------------------------------|---|---|
-| אופיר אוריאל | <a href="https://cal.com/uriel-ofir/15min" target="_blank">קישור לקביעת פגישה</a>         | <a href="https://www.linkedin.com/in/uriel-ofir/" target="_blank">קישור לפרופיל הלינקדין של אוריאל</a>             |
-| עידו דוד     |  <a href="https://calendly.com/idonkl100/30min" target="_blank"> קישור לקביעת פגישה </a>  | <a href="https://www.linkedin.com/in/ido-david-46b59119a" target="_blank"> קישור לפרופיל הלינקדין של עידו דוד </a> |
+
+
+| שם מלא | תיאור  קצר  | קישור ליומן | קישור ללינקדין                                                                                                    |
+|---------|--|-|-|
+| אוריאל אופיר | מנהל קהילת מעקף, מתכנת JS | <a href="https://cal.com/uriel-ofir/15min" target="_blank">קביעת פגישה</a>         | <a href="https://www.linkedin.com/in/uriel-ofir" target="_blank">  פרופיל הלינקדין של אוריאל אופיר </a>    |
+| עידו דוד     | | <a href="https://calendly.com/idonkl100/30min" target="_blank"> קביעת פגישה </a>  | <a href="https://www.linkedin.com/in/ido-david-46b59119a" target="_blank"> פרופיל הלינקדין של עידו דוד </a> |
