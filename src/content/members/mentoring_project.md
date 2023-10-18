@@ -27,3 +27,4 @@ title: "פרוייקט המנטורינג של קהילת מעקף"
 | עידו דוד     | [קישור לקביעת פגישה](https://calendly.com/idonkl100/30min) | [קישור לפרופיל הלינקדין של עידו](https://www.linkedin.com/in/ido-david-46b59119a) |
 | אימרי גולדברג    | [קישור לקביעת פגישה](https://calendly.com/imrigoldberg/30min) | [קישור לפרופיל הלינקדין של אימרי](https://www.linkedin.com/in/imrigoldberg/) |
 | יואב קלינברגר    | [קישור לקביעת פגישה](https://calendly.com/haarcuba/30min) | [קישור לפרופיל הלינקדין של יואב](https://www.linkedin.com/in/yoavkl/) |
+| מתן פחימה    | [קישור לקביעת פגישה](https://calendly.com/matann/15-minutes-meeting) | [קישור לפרופיל הלינקדין של מתן](https://www.linkedin.com/in/matan-fchima/) |
