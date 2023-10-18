@@ -1,0 +1,29 @@
+{
+  "contacts": [
+    {
+      "שם מלא": "אופיר אוריאל",
+      "קישור ליומן": "https://cal.com/uriel-ofir/15min",
+      "פרופיל לינקדאין": "https://www.linkedin.com/in/uriel-ofir/"
+    },
+    {
+      "שם מלא": "עידו דוד",
+      "קישור ליומן": "https://calendly.com/idonkl100/30min",
+      "פרופיל לינקדאין": "https://www.linkedin.com/in/ido-david-46b59119a"
+    },
+    {
+      "שם מלא": "אימרי גולדברג",
+      "קישור ליומן": "https://calendly.com/imrigoldberg/30min",
+      "פרופיל לינקדאין": "https://www.linkedin.com/in/imrigoldberg/"
+    },
+    {
+      "שם מלא": "יואב קלינברגר",
+      "קישור ליומן": "https://calendly.com/haarcuba/30min",
+      "פרופיל לינקדאין": "https://www.linkedin.com/in/yoavkl/"
+    },
+    {
+      "שם מלא": "מתן פחימה",
+      "קישור ליומן": "https://calendly.com/matann/15-minutes-meeting",
+      "פרופיל לינקדאין": "https://www.linkedin.com/in/matan-fchima/"
+    }
+  ]
+}
