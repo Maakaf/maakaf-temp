@@ -44,13 +44,13 @@ const Table = ({ data }: TableProps) => {
   })
 
   return (
-    <div className="p-2">
-      <table className="w-full border border-gray-200 text-center">
+    <div className="p-2 overflow-y-auto">
+      <table className="table table-zebra border text-center">
         <thead className="text-white">
           {table.getHeaderGroups().map(headerGroup => (
-            <tr key={headerGroup.id}>
+            <tr key={headerGroup.id} className="bg-gray-500">
               {headerGroup.headers.map(header => (
-                <th key={header.id} className="px-4 py-2">
+                <th key={header.id} className="px-5 py-3">
                   {header.isPlaceholder
                     ? null
                     : (
@@ -68,9 +68,9 @@ const Table = ({ data }: TableProps) => {
         </thead>
         <tbody>
           {table.getRowModel().rows.map(row => (
-            <tr key={row.id} className={row.index % 2 === 0 ? 'bg-gray-500' : "bg-gray-600"}>
+            <tr key={row.id} className="hover hover:bg-slate-300 bg-inherit">
               {row.getVisibleCells().map(cell => (
-                <td key={cell.id} className="px-4 py-2">
+                <td key={cell.id} >
                   {flexRender(
                     cell.column.columnDef.cell,
                     cell.getContext()
