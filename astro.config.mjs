@@ -8,7 +8,12 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://maakaf.netlify.app/',
-  integrations: [sitemap(), react(), tailwind({
+  integrations: [
+    sitemap(),
+    react({
+      include: ['**/react/*'],
+    }), 
+    tailwind({
     applyBaseStyles: false
   })]
 });
