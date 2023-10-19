@@ -77,6 +77,8 @@ git checkout -b my-new-feature
 
 זה הזמן לקודד!
 
+#### עבור תוכן טבלאי יש להוסיף קובץ בתקיית `assests/table_data`
+
 ### עשו Commit לשינויים
 
 עשו Commit לשינויים שביצעתם על ידי:
