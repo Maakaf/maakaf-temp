@@ -1,5 +1,5 @@
-{
-  "contacts": [
+
+  [
     {
       "שם מלא": "אופיר אוריאל",
       "קישור ליומן": "https://cal.com/uriel-ofir/15min",
@@ -26,4 +26,3 @@
       "פרופיל לינקדאין": "https://www.linkedin.com/in/matan-fchima/"
     }
   ]
-}

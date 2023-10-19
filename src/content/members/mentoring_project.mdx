@@ -1,6 +1,8 @@
 ---
 title: "פרוייקט המנטורינג של קהילת מעקף"
 ---
+import Table from "@components/react/Table.tsx"
+import data from "@assets/table_data/contacts.json"
 
 # פרוייקט המנטורינג של קהילת מעקף
 
@@ -20,10 +22,4 @@ title: "פרוייקט המנטורינג של קהילת מעקף"
 [קישור לעריכת העמוד הזה](https://github.com/Maakaf/maakaf-temp/blob/main/src/content/members/mentoring_project.md)
 
 ## היכרות עם המתכנתים המנוסים בקהילה:
-
-| שם מלא       | קישור ליומן                                                | פרופיל לינקדאין                                                                       |
-| ------------ | ---------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| אופיר אוריאל | [קישור לקביעת פגישה](https://cal.com/uriel-ofir/15min)     | [קישור לפרופיל הלינקדין של אוריאל](https://www.linkedin.com/in/uriel-ofir/)           |
-| עידו דוד     | [קישור לקביעת פגישה](https://calendly.com/idonkl100/30min) | [קישור לפרופיל הלינקדין של עידו](https://www.linkedin.com/in/ido-david-46b59119a) |
-| אימרי גולדברג    | [קישור לקביעת פגישה](https://calendly.com/imrigoldberg/30min) | [קישור לפרופיל הלינקדין של אימרי](https://www.linkedin.com/in/imrigoldberg/) |
-| יואב קלינברגר    | [קישור לקביעת פגישה](https://calendly.com/haarcuba/30min) | [קישור לפרופיל הלינקדין של יואב](https://www.linkedin.com/in/yoavkl/) |
+<Table data= {data}/>
