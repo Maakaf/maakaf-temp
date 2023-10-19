@@ -23,18 +23,18 @@
 
 #### איך האתר בנוי
 
-**תיקיית ```pages```**
+**תיקיית `pages`**
 
 מכילה את עמודי הקטגוריה הראשיים, אלו שמופיעים בתפריט העליון (עמוד הבית, מתחילים, משתתפים וכו').
 
-**תיקיית ```content```**
+**תיקיית `content`**
 
 מכילה את התכנים שמקושרים לכל עמוד קטגוריה, בתוך התיקייה המתאימה. אלו התכנים שמוצגים בתפריט הצד.
 
 ![מבנה האתר](https://github.com/Maakaf/maakaf-temp/assets/116891360/475e794e-6c71-4536-81cb-5b909e5182bb)
 
-
 #### הוספת תוכן לאתר
+
 אתרו את המיקום שאליו תרצו להוסיף תוכן. האם אתם רוצים לבצע שינויים בתוכן קיים בעמוד הקטגוריה עצמו? או אולי להוסיף עמוד חדש תחת עמוד קטגוריה מסוים?
 
 אם אתם לא בטוחים - צרו איתנו קשר ע"י תיוג באישיו / כתבו בדיסקורד.
@@ -54,15 +54,23 @@ cd maakaf-temp
 
 ### התקינו ספריות
 
-התקינו את כל הספריות הנחוצות לפרויקט על ידי:
+Please use [pnpm](https://pnpm.io/installation) as package manger instead of npm
 
 ```shell
-# with npm
-npm i
-# with yarn
-yarn
-# with pnpm
+
+# install dependencies
 pnpm i
+
+# add new packages
+pnpm add
+
+# remove unused packages
+pnpm remove
+
+# run script from package.json
+pnpm <script-name>
+pnpm dev
+pnpm build
 ```
 
 ### צרו Branch
