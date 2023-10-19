@@ -30,7 +30,7 @@ const Table = ({ data }: TableProps) => {
     for (const key in data[0]) {
       dataColumns.push(columnHelper.accessor(key, {
         header: key,
-        cell: info => validUrl(info.getValue())? <a href={info.getValue()}>{key}</a>: info.getValue() 
+        cell: info => validUrl(info.getValue())? <a target="_blank" href={info.getValue()}>{key}</a>: info.getValue() 
       }))
     }
     return dataColumns
@@ -44,11 +44,11 @@ const Table = ({ data }: TableProps) => {
   })
 
   return (
-    <div className="p-2 overflow-y-auto">
+    <div className="p-2 overflow-y-auto w-full">
       <table className="table table-zebra border text-center">
-        <thead className="text-white">
+        <thead className="text-neutral-content">
           {table.getHeaderGroups().map(headerGroup => (
-            <tr key={headerGroup.id} className="bg-gray-500">
+            <tr key={headerGroup.id} className="bg-neutral">
               {headerGroup.headers.map(header => (
                 <th key={header.id} className="px-5 py-3">
                   {header.isPlaceholder
@@ -68,7 +68,7 @@ const Table = ({ data }: TableProps) => {
         </thead>
         <tbody>
           {table.getRowModel().rows.map(row => (
-            <tr key={row.id} className="hover hover:bg-slate-300 bg-inherit">
+            <tr key={row.id} className="hover bg-neutral-focus transition">
               {row.getVisibleCells().map(cell => (
                 <td key={cell.id} >
                   {flexRender(
