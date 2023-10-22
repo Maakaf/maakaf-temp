@@ -1,0 +1,27 @@
+---
+import BaseHead from "@components/BaseHead.astro";
+import Footer from "@components/en/EnFooter.astro";
+import Header from "@components/en/EnHeader.astro";
+import SideNav from "@components/SideNav.astro";
+import type { CollectionType } from "../../content/config";
+
+type Props = {
+  collection: CollectionType;
+};
+
+const { collection } = Astro.props;
+---
+
+<html>
+  <BaseHead title="Maakaf" description="Open source website community" />
+  <body>
+    <Header />
+    <main class="flex flex-col md:flex-row">
+      <SideNav collection={collection} />
+      <article class="mx-6 py-2 prose prose-th:text-right prose-td:text-right">
+        <slot />
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>

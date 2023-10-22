@@ -1,0 +1,16 @@
+---
+import BaseHead from "@components/BaseHead.astro";
+import Footer from "@components/en/EnFooter.astro";
+import Header from "@components/en/EnHeader.astro";
+---
+
+<html>
+  <BaseHead title="Maakaf" description="Open source website community" />
+  <body>
+    <Header />
+    <main class="mx-6 md:max-w-2xl md:mx-auto py-2 prose">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

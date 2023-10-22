@@ -1,10 +1,9 @@
 ---
-import MaintainersLayout from "@layouts/MaintainersLayout.astro";
+import RecruitersLayout from "@layouts/en/EnRecruitersLayout.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("maintainers");
-
+  const posts = await getCollection("recruiters");
   return (
     posts?.map((post) => ({
       params: { slug: post.slug },
@@ -12,12 +11,12 @@ export async function getStaticPaths() {
     })) || []
   );
 }
-type Props = CollectionEntry<"maintainers">;
+type Props = CollectionEntry<"recruiters">;
 
 const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<MaintainersLayout>
+<RecruitersLayout>
   <Content />
-</MaintainersLayout>
+</RecruitersLayout>
