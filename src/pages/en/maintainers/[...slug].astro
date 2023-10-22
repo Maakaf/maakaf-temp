@@ -1,10 +1,9 @@
 ---
-import MaintainersLayout from "@layouts/MaintainersLayout.astro";
+import MaintainersLayout from "@layouts/en/EnMaintainersLayout.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 
 export async function getStaticPaths() {
   const posts = await getCollection("maintainers");
-
   return (
     posts?.map((post) => ({
       params: { slug: post.slug },

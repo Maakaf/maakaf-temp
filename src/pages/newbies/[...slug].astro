@@ -3,7 +3,10 @@ import NewbiesLayout from "@layouts/NewbiesLayout.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("newbies");
+  let posts = await getCollection("newbies");
+
+  posts = posts.filter((c) => c.data.lang === "he");
+
   return (
     posts?.map((post) => ({
       params: { slug: post.slug },
