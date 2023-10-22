@@ -1,5 +1,5 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
+import HeaderLink from "../HeaderLink.astro";
 ---
 
 <header class="navbar bg-base-100 shadow-2xl mb-4">
@@ -26,46 +26,47 @@ import HeaderLink from "./HeaderLink.astro";
         class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 [&_li]:ml-auto [&_li]:btn-ghost [&_li]:px-4"
       >
         <li>
-          <HeaderLink href="/newbies">מתחילים</HeaderLink>
+          <HeaderLink href="/en/newbies">Nembies</HeaderLink>
         </li>
         <li>
-          <HeaderLink href="/members">חברים</HeaderLink>
+          <HeaderLink href="/en/members">Members</HeaderLink>
         </li>
         <li>
-          <HeaderLink href="/maintainers">מתחזקים</HeaderLink>
+          <HeaderLink href="/en/maintainers">Maintainers</HeaderLink>
         </li>
         <li>
-          <HeaderLink href="/sponsors">ספונסרים</HeaderLink>
+          <HeaderLink href="/en/sponsors">Sponsors</HeaderLink>
         </li>
         <li>
-          <HeaderLink href="/recruiters">מגייסים</HeaderLink>
+          <HeaderLink href="/en/recruiters">Recruiters</HeaderLink>
         </li>
       </ul>
     </div>
 
-    <a href="/" class="btn btn-ghost normal-case text-xl">מעקף</a>
+    <a href="/en/" class="btn btn-ghost normal-case text-xl">Maakaf</a>
   </div>
 
   <div class="navbar-start hidden md:flex">
     <ul class="menu menu-horizontal px-1">
       <li>
-        <HeaderLink href="/newbies">מתחילים</HeaderLink>
+        <HeaderLink href="/en/newbies">Nembies</HeaderLink>
       </li>
       <li>
-        <HeaderLink href="/members">חברים</HeaderLink>
+        <HeaderLink href="/en/members">Members</HeaderLink>
       </li>
       <li>
-        <HeaderLink href="/maintainers">מתחזקים</HeaderLink>
+        <HeaderLink href="/en/maintainers">Maintainers</HeaderLink>
       </li>
       <li>
-        <HeaderLink href="/sponsors">ספונסרים</HeaderLink>
+        <HeaderLink href="/en/sponsors">Sponsors</HeaderLink>
       </li>
       <li>
-        <HeaderLink href="/recruiters">מגייסים</HeaderLink>
+        <HeaderLink href="/en/recruiters">Recruiters</HeaderLink>
       </li>
     </ul>
   </div>
+
   <div class="navbar-end">
-    <a href="/en" class="btn btn-ghost btn-sm">עברית</a>
+    <a href="/" class="btn btn-ghost btn-sm">English</a>
   </div>
 </header>

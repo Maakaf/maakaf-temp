@@ -1,10 +1,9 @@
 ---
-import MaintainersLayout from "@layouts/MaintainersLayout.astro";
+import SponsorsLayout from "@layouts/en/EnSponsorsLayout.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("maintainers");
-
+  const posts = await getCollection("sponsors");
   return (
     posts?.map((post) => ({
       params: { slug: post.slug },
@@ -12,12 +11,12 @@ export async function getStaticPaths() {
     })) || []
   );
 }
-type Props = CollectionEntry<"maintainers">;
+type Props = CollectionEntry<"sponsors">;
 
 const post = Astro.props;
 const { Content } = await post.render();
 ---
 
-<MaintainersLayout>
+<SponsorsLayout>
   <Content />
-</MaintainersLayout>
+</SponsorsLayout>
