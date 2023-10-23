@@ -5,6 +5,8 @@ lang: "he"
 
 # איך לתרום לקוד פתוח? מדריך תרומה ראשונית בפרויקט התרגול
 
+### מאת דרור קרפפן
+
 ברוכים הבאים לעולם הקוד הפתוח!
 במדריך הזה נלמד איך עובד תהליך התרומה לקוד פתוח, ונדגים כאן שלב אחר שלב תרומה לפרויקט התרגול של קהילת מעק"ף.
 
@@ -19,26 +21,26 @@ lang: "he"
 
 אנחנו נעבוד בשני מישורים - יהיו פעולות שנבצע **בפרויקט הראשי**, ויהיו פעולות שנבצע **מקומית אצלנו**.
 
-![תרשים של תהליך העבודה בקוד פתוח](../../assets/images/how-to-start-os-practice/os-workflow.png)
+![תרשים של תהליך העבודה בקוד פתוח](../../assets/images/newbies/how-to-start-os-practice/os-workflow.png)
 
 ## 1. יצירת פורק Fork
 
 ניגש לפרויקט הראשי וניצור פורק.
 **פורק זו פעולה שמעתיקה את הריפו של הפרויקט הראשי אל הגיטהאב שלנו.**
 
-![כפתור fork](../../assets/images/how-to-start-os-practice/1-fork-btn.png)
+![כפתור fork](../../assets/images/newbies/how-to-start-os-practice/1-fork-btn.png)
 
 אין צורך לבצע שינויים במסך הביניים, פשוט לאשר, וזה מיד יעביר אותנו אל הריפו שנוצר אצלנו.
 נוכל לראות שהפורק, הריפו שנוצר אצלנו, ממש זהה לריפו של הפרויקט הראשי.
 
-![יצירת fork](../../assets/images/how-to-start-os-practice/2-create-fork.png)
+![יצירת fork](../../assets/images/newbies/how-to-start-os-practice/2-create-fork.png)
 
 ## 2. יצירת קלון Clone
 
 בריפו שנוצר אצלנו, בפורק, נעשה קלון.
 **זה למעשה יוצר עותק של הפרויקט על המחשב שלנו, ומאפשר לנו להריץ אותו לוקאלית.**
 
-![יצירת clone](../../assets/images/how-to-start-os-practice/4-clone.png)
+![יצירת clone](../../assets/images/newbies/how-to-start-os-practice/4-clone.png)
 
 אפשר לעשות את זה דרך הטרמינל, ואפשר גם ממש להוריד ידנית את הפרויקט בקובץ zip.
 נדגים את הפעולה הזו דרך הטרמינל.
@@ -47,7 +49,7 @@ lang: "he"
     git clone https://github.com/[your user]/os-practice.git
 
 זה יצור לנו את הפרויקט על המחשב, ועכשיו נוכל לעבוד עליו ולהריץ אותו מקומית.
-![הפרויקט המקומי](../../assets/images/how-to-start-os-practice/local-project.png)
+![הפרויקט המקומי](../../assets/images/newbies/how-to-start-os-practice/local-project.png)
 
 _**נשים לב!** שתי הפעולות האלו, פורק וקלון, אלו פעולות שנעשה פעם אחת כשנצטרף לפרויקט. מכאן המשך התהליך זו רוטינה שחוזרת על עצמה._
 
@@ -68,11 +70,11 @@ _**נשים לב!** שתי הפעולות האלו, פורק וקלון, אלו 
 
 במקרה שלנו בפרויקט התרגול - אנחנו נפתח את האישיו, ואוטומטית נהיה מוגדרים כאחראים עליו (זו אוטומציה ספציפית לפרויקט הזה, כאמור בדרך כלל צריך להגיב ולבקש ממנהלי הפרויקט שיגדירו אותנו).
 
-![יצירת issue](../../assets/images/how-to-start-os-practice/6-new-issue.png)
+![יצירת issue](../../assets/images/newbies/how-to-start-os-practice/6-new-issue.png)
 
-![יצירת issue](../../assets/images/how-to-start-os-practice/7-set-issue.png)
+![יצירת issue](../../assets/images/newbies/how-to-start-os-practice/7-set-issue.png)
 
-![הגדרה אוטומטית של אחראי](../../assets/images/how-to-start-os-practice/8-auto-assign.png)
+![הגדרה אוטומטית של אחראי](../../assets/images/newbies/how-to-start-os-practice/8-auto-assign.png)
 
 ## 4. יצירת בראנץ', עבודה, ודחיפת השינויים Branch, Code & Push
 
@@ -87,26 +89,26 @@ _**נשים לב!** שתי הפעולות האלו, פורק וקלון, אלו 
 נלחץ על ה-main שבפינה השמאלית למטה, ונבחר בתפריט Create new branch.
 ניתן לו שם, שיהיה בעל משמעות כמובן.
 
-![פתיחת branch](../../assets/images/how-to-start-os-practice/9-new-branch.png)
+![פתיחת branch](../../assets/images/newbies/how-to-start-os-practice/9-new-branch.png)
 
 נוכל לראות שאיפה שהיה main קודם עכשיו מופיע הבראנץ' החדש שפתחנו - כלומר עכשיו אנחנו עובדים על הבראנץ' החדש, וכל השינויים שנבצע ישמרו רק בו.
 
 נתקין את כל הספריות ונריץ את הפרויקט. ואז נוסיף את השינויים שלנו - קובץ טקסט פשוט.
 נוכל לראות ב-local host את השינויים שביצענו.
 
-![עבודה מקומית](../../assets/images/how-to-start-os-practice/see-changes.png)
+![עבודה מקומית](../../assets/images/newbies/how-to-start-os-practice/see-changes.png)
 
 נראה טוב!
 אז יאללה נעשה קומיט ופוש.
 
-![ביצוע commit](../../assets/images/how-to-start-os-practice/10-commit.png)
+![ביצוע commit](../../assets/images/newbies/how-to-start-os-practice/10-commit.png)
 
-![ביצוע push](../../assets/images/how-to-start-os-practice/11-push.png)
+![ביצוע push](../../assets/images/newbies/how-to-start-os-practice/11-push.png)
 
 אם נסתכל על הפורק שלנו נוכל לראות ברשימת הבראנצ'ים את הבראנץ' החדש שפתחנו.
 נשים לב שבבראנץ' הראשי השינויים שעשינו לא מופיעים, הם רק בבראנץ' שעבדנו עליו.
 
-![הבראנץ' שלנו](../../assets/images/how-to-start-os-practice/12-see-branch.png)
+![הבראנץ' שלנו](../../assets/images/newbies/how-to-start-os-practice/12-see-branch.png)
 
 ## 5. פתיחת פול ריקווסט Pull Request
 
@@ -125,16 +127,16 @@ _**נשים לב!** שתי הפעולות האלו, פורק וקלון, אלו 
 אז בריפו של הפרויקט הראשי, ניגש ללשונית פול ריקווסטס ונפתח חדש.
 נלחץ על compare across forks, ובצד שמאל נראה את הריפו והבראנץ' הראשי של הפרויקט, ובצד ימין נבחר את הפורק שלנו ואת הבראנץ' שעבדנו עליו.
 
-![יצירת PR](../../assets/images/how-to-start-os-practice/13-new-pr.png)
+![יצירת PR](../../assets/images/newbies/how-to-start-os-practice/13-new-pr.png)
 
-![יצירת PR](../../assets/images/how-to-start-os-practice/14-choose-fork-branch.png)
+![יצירת PR](../../assets/images/newbies/how-to-start-os-practice/14-choose-fork-branch.png)
 
 נוכל להסתכל על כל השינויים והקומיטים שביצענו, ונלחץ על Create pull request.
 הפול ריקווסט נוצר ומריץ מספר בדיקות ואוטומציות. תוך כמה רגעים זה מסתיים, והפול ריקווסט שלנו מוכן לריוויו על ידי מנהלי הפרויקט.
 
-![יצירת PR](../../assets/images/how-to-start-os-practice/15-create-pr.png)
+![יצירת PR](../../assets/images/newbies/how-to-start-os-practice/15-create-pr.png)
 
-![קישור לאישיו](../../assets/images/how-to-start-os-practice/16-link-issue.png)
+![קישור לאישיו](../../assets/images/newbies/how-to-start-os-practice/16-link-issue.png)
 
 הידד! השלמנו את התהליך! תרגלנו תרומה לקוד פתוח!
 
@@ -159,7 +161,7 @@ _**נשים לב!** שתי הפעולות האלו, פורק וקלון, אלו 
 אם הוא לא מעודכן, נלחץ על הכפתור של סנכרון הפורק וזה יתעדכן.
 עכשיו אנחנו מוכנים לצאת שוב לדרך!
 
-![סנכרון הפורק](../../assets/images/how-to-start-os-practice/18-sync.png)
+![סנכרון הפורק](../../assets/images/newbies/how-to-start-os-practice/18-sync.png)
 
 ## לסיכום
 
