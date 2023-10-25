@@ -3,69 +3,69 @@ import HeaderLink from "./HeaderLink.astro";
 ---
 
 <header class="navbar bg-base-100 shadow-2xl mb-4">
-  <div>
-    <div class="dropdown">
-      <label tabindex="0" class="btn btn-ghost md:hidden">
-        <svg
-          class="w-5 h-5"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 17 14"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 1h15M1 7h15M1 13h15"></path>
-        </svg>
-      </label>
-      <ul
-        tabindex="0"
-        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 [&_li]:ml-auto [&_li]:btn-ghost [&_li]:px-4"
-      >
-        <li>
-          <HeaderLink href="/newbies">מתחילים</HeaderLink>
-        </li>
-        <li>
-          <HeaderLink href="/members">חברים</HeaderLink>
-        </li>
-        <li>
-          <HeaderLink href="/maintainers">מתחזקים</HeaderLink>
-        </li>
-        <li>
-          <HeaderLink href="/sponsors">ספונסרים</HeaderLink>
-        </li>
-        <li>
-          <HeaderLink href="/recruiters">מגייסים</HeaderLink>
-        </li>
-      </ul>
-    </div>
+	<div>
+		<div class="dropdown">
+			<label tabindex="0" class="btn btn-ghost md:hidden">
+				<svg
+					class="w-5 h-5"
+					aria-hidden="true"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 17 14"
+				>
+					<path
+						stroke="currentColor"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M1 1h15M1 7h15M1 13h15"></path>
+				</svg>
+			</label>
+			<ul
+				tabindex="0"
+				class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 [&_li]:ml-auto [&_li]:btn-ghost [&_li]:px-4"
+			>
+				<li>
+					<HeaderLink href="/newbies">מתחילים</HeaderLink>
+				</li>
+				<li>
+					<HeaderLink href="/members">חברים</HeaderLink>
+				</li>
+				<li>
+					<HeaderLink href="/maintainers">מתחזקים</HeaderLink>
+				</li>
+				<li>
+					<HeaderLink href="/sponsors">ספונסרים</HeaderLink>
+				</li>
+				<li>
+					<HeaderLink href="/recruiters">מגייסים</HeaderLink>
+				</li>
+			</ul>
+		</div>
 
-    <a href="/" class="btn btn-ghost normal-case text-xl">מעקף</a>
-  </div>
+		<a href="/" class="btn btn-ghost normal-case text-xl">מעקף</a>
+	</div>
 
-  <div class="navbar-start hidden md:flex">
-    <ul class="menu menu-horizontal px-1">
-      <li>
-        <HeaderLink href="/newbies">מתחילים</HeaderLink>
-      </li>
-      <li>
-        <HeaderLink href="/members">חברים</HeaderLink>
-      </li>
-      <li>
-        <HeaderLink href="/maintainers">מתחזקים</HeaderLink>
-      </li>
-      <li>
-        <HeaderLink href="/sponsors">ספונסרים</HeaderLink>
-      </li>
-      <li>
-        <HeaderLink href="/recruiters">מגייסים</HeaderLink>
-      </li>
-    </ul>
-  </div>
-  <div class="navbar-end">
-    <a href="/en" class="btn btn-ghost btn-sm">עברית</a>
-  </div>
+	<div class="navbar-start hidden md:flex">
+		<ul class="menu menu-horizontal px-1">
+			<li>
+				<HeaderLink href="/newbies">מתחילים</HeaderLink>
+			</li>
+			<li>
+				<HeaderLink href="/members">חברים</HeaderLink>
+			</li>
+			<li>
+				<HeaderLink href="/maintainers">מתחזקים</HeaderLink>
+			</li>
+			<li>
+				<HeaderLink href="/sponsors">ספונסרים</HeaderLink>
+			</li>
+			<li>
+				<HeaderLink href="/recruiters">מגייסים</HeaderLink>
+			</li>
+		</ul>
+	</div>
+	<div class="navbar-end">
+		<a href="/en" class="btn btn-ghost btn-sm">English</a>
+	</div>
 </header>
