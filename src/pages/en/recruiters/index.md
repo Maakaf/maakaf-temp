@@ -2,4 +2,4 @@
 layout: "@layouts/en/EnRecruitersLayout.astro"
 ---
 
-בקרוב יהיה כאן תוכן עבור מגייסים
+Content for recruiters will be available here soon.

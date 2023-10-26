@@ -1,27 +1,24 @@
 ---
 layout: "@layouts/RecruitersLayout.astro"
 ---
+# Welcome Dear Recruiters
 
-# ברוכים הבאים מגייסות ומגייסים יקרים
+**Maakaf** was created with the goal of strengthening the world of open-source in Israel, especially the opportunity to contribute to open-source projects.
+Our emphasis is on making this unique field accessible to all.
+Everyone is welcome to join the community regardless of religion, race, gender, or professional experience.
 
-**מעקף** נוצרה במטרה לחזק את עולם הקוד הפתוח בישראל, ובמיוחד את האפשרות לתרום לפרוייקטים של קוד פתוח.
-הדגש שלנו הוא הנגשה של תחום ייחודי זה.  
-כולם מוזמנים להצטרף לקהילה ללא הבדל דת, גזע, מין וניסיון תעסוקתי.
+## Why Should You Recruit a Developer Who Contributes to Open Source?
 
+- **Proven Knowledge -**  
+A developer who has had code approved for open-source projects managed by experienced programmers demonstrates advanced programming skills and can directly present their skills through proven experience. Not only did the developer successfully write working code, but it was also approved by an experienced developer who vouched for the quality of their code.
 
-### למה כדאי לגייס מתכנת שתורם לקוד פתוח?
+- **High Communication Skills -**  
+To succeed in contributing to open source, you need to have excellent communication skills. This is a developer who, independently, managed to coordinate remotely with the project manager and add their code to the project. Without high communication skills, this is impossible.
 
-- **ידע מאומת -**  
-אדם שאושר לו קוד לפרויקט של קוד פתוח בפרויקטים שונים שמנוהלים על ידי מתכנתים מנוסים מראה יכולות תכנות גבוהות, ויכול להציג באופן ישיר את כישוריו, באמצעות ניסיון מוכח.  
-לא רק שהמתכנת הצליח לכתוב קוד שעובד, יש גם מתכנת מנוסה שאישר את הקוד של המתכנת וחתם על כך שמדובר על מתכנת שראוי לסמוך על הקוד שלו.
+- **Initiative -**  
+Only a developer who loves the profession, loves writing code, and is eager to contribute to open source. These are developers who don't wait for instructions to promote a project but rather are passionate programmers with a big vision who want to initiate and act, even when there are no immediate requirements.
 
-- **יכולת תקשורת גבוהה -**  
-כדי להצליח לתרום לקוד פתוח צריך להיות עם יכולת תקשורת גבוהה. מדובר בתכנת שבאופן עצמאי הצליח לתאם מרחוק עם מנהל הפרוייקט של הקוד את הפתוח את הוספת הקוד שלו לפרוייקט. ללא יכולת תקשורת גבוהה זה בלתי אפשרי.
-
-- **יוזמה -**  
-רק מתכנת שאוהב את המקצוע, ואוהב לכתוב קוד, ייזום ויבצע תרומה לקוד פתוח. מדובר במתכנתים שלא מחכים להוראות ורק אז מקדמים את הפרוייקט, אלא במתכתנים עם תשוקה וראש גדול שמעוניינים ליזום ולעשות גם כשאין כלפיהם דרישה מיידית.
-
-## לפרטים נוספים ומציאת הטאלנטים הבאים שלכם, יש לפנות למייסד הקהילה אוריאל אופיר.  
-אפשר ליצור עם אוריאל קשר בלינקדין- [LinkedIn](https://www.linkedin.com/in/uriel-ofir/) 
+## For more information and to discover your next talents, please contact the community's founder, Uriel Ofir.
+You can connect with Uriel on LinkedIn - [LinkedIn](https://www.linkedin.com/in/uriel-ofir/)
 
 

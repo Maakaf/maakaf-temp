@@ -2,4 +2,4 @@
 layout: "@layouts/MaintainersLayout.astro"
 ---
 
-בקרוב יהיה כאן תוכן עבור מנהלי פרויקטים
+Content for project managers will be available here soon.

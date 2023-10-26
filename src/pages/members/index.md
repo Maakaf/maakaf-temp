@@ -2,4 +2,4 @@
 layout: "@layouts/MembersLayout.astro"
 ---
 
-בקרוב יהיה כאן תוכן עבור חברי הקהילה
+Content for community members will be available here soon.

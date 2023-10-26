@@ -2,4 +2,4 @@
 layout: "@layouts/SponsorsLayout.astro"
 ---
 
-בקרוב יהיה כאן תוכן עבור ספונסרים
+In the near future, there will be content here for sponsors.
