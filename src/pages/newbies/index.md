@@ -1,39 +1,40 @@
 ---
 layout: "@layouts/NewbiesLayout.astro"
 ---
-Welcome to the "Maakaf" community!
-### An open-source community in Israel 🌐
 
-**Join us on Discord:** <a target="_blank" href="https://discord.gg/WxqmcKfD5R">Click here</a>
+# ברוכים הבאים לקהילת "מעקף"!
+### קהילת קוד פתוח בישראל 🌐
 
-#### Why Contribute to Open Source?
+**הצטרפו אלינו בדיסקורד:** <a target= "_blank" href="https://discord.gg/WxqmcKfD5R">לחצו כאן</a>  
 
-**Experienced Developers?** During your contribution to open source, experienced developers in various technologies will review the code you've written and provide valuable feedback, pushing you forward.
+#### למה בכלל לתרום לקוד פתוח?
 
-**Juniors?** In addition to learning and improving your skills, contributing to open source is the closest thing to real-world experience you can gain on your own. Code that you write and is accepted after a code review by a senior industry expert will significantly enhance your resume and demonstrate your high-level coding skills.
+**מתכנתים מנוסים?** במהלך התרומה שלכם לקוד פתוח, מתכנתים אחרים שמנוסים בטכנולוגיות, יעברו על הקוד שרשמתם וייתנו לכם פידבק אמיתי, וידחפו אתכם קדימה.
 
-#### Why Join the Community?
+**ג'וניורים?** בנוסף ללמידה ושיפור היכולות, תרומה לקוד פתוח זה הדבר הקרוב ביותר לנסיון אמיתי שתוכלו לרכוש לבד. קוד שתכתבו ועבר code review ע״י סניור בתעשיה והתקבל, מוסיף המון לרזומה שלכם ומוכיח יכולת כתיבת קוד ברמה גבוהה.
 
-**Introduce Yourself and Meet Others:** The community is based on personal connections. We would be happy if you share what you're looking for and your capabilities.
+#### למה כדאי להצטרף לקהילה?
 
-**Engage in Projects That Interest You:** The community projects are organized by different languages and technologies. You can easily find a project that interests you and use the technologies you love.
+**הציגו את עצמכם והכירו אחרים:** הקהילה מבוססת על קשרים אישיים. נשמח אם תשתפו מה אתם מחפשים ומה יכולתכם.
 
-**Networking:** We encourage community members to share social networks (e.g., LinkedIn) to create new connections.
+**השתלבו בפרוייקטים המתאימים לכם:** הפרוייקטים בקהילה מסודרים לפי השפות והטכנולוגיות השונות, תוכלו בקלות למצוא את הפרוייקט שמעניין אתכם ומשתמש בטכנולוגיות האהובות עליכם
 
-**Specialization:** Want to specialize in open source? We're here to help. We have dedicated channels for guidance and mentors who can assist you.
+**צרו קשרים:** אנחנו מעודדים את חברי הקהילה לשתף את הרשתות החברתיות (למשל לינקדין) על מנת ליצור קשרים חדשים.
 
-#### How to Contribute Code?
+**התמקצעות:** רוצים להתמקצע בקוד פתוח? אנחנו כאן לעזור. יש לנו ערוצים מדריכים, ואנשים שיכולים להכווין אתכם.
 
-If you have never contributed to open source before, you can practice your first contribution with us (just add a text file to the project). We've created a [special project for you to make code contributions](https://github.com/UrielOfir/os-practice) to learn how to make code contributions on GitHub. There's also a [detailed guide that explains how to contribute to this project](https://github.com/UrielOfir/os-practice).
+#### איך תורמים קוד?
 
-#### Additional Links:
-**WhatsApp Group for Updates:** <a target="_blank" href="https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts">Here</a>
+אם לא תרמתם מעולם לקוד פתוח, ניתן לתרגל אצלנו תרומה ראשונה (סך הכל להוסיף קובץ טקסט לפרוייקט).  
+פתחנו במיוחד עבורכם [פרוייקט נסיוני](https://github.com/UrielOfir/os-practice) אליו תוכלו לבצע תרומות קוד כדי ללמוד איך מתבצעת תרומת קוד בגיט-האב.  
+יש גם [מדריך מפורט שמסביר איך לתרום לפרוייקט הזה](https://github.com/UrielOfir/os-practice).
 
-**WhatsApp Group with General Chat:** <a target="_blank" href="https://chat.whatsapp.com/E5a59DtSaHNBwnczxVW1FY">Here</a>
-
-**YouTube Channel with Tutorials and Directions:** <a target="_blank" href="https://www.youtube.com/@maakaf-os">Here</a>
-
-**A Playlist to Help You Get Started with Open Source:** <a target="_blank" href="https://youtube.com/playlist?list=PLFP8kbJw2mot-6WSKS3_4Fmmx-30w6-tj">Here</a>
-
-**Stuck? Need Help?**
-Feel free to reach out to the community members for assistance. Our goal is to increase the number of open-source contributors in Israel, and we'll be happy to guide and mentor you in entering the world of open source.
+#### קישורים נוספים:
+**קבוצת עדכונים שקטה בוואטספ:** <a target= "_blank" href="https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts">כאן</a>  
+**קבוצת וואטספ עם צ'אט חופשי:** <a target= "_blank" href="https://chat.whatsapp.com/E5a59DtSaHNBwnczxVW1FY">כאן</a>  
+**יש ערוץ ביוטיוב עם מדריכים והכוונות:** <a target= "_blank" href="https://www.youtube.com/@maakaf-os">כאן</a>  
+**ופלייליסט שנועד לעזור לכם להכנס לעולם של הקוד הפתוח:**  <a target= "_blank" href="https://youtube.com/playlist?list=PLFP8kbJw2mot-6WSKS3_4Fmmx-30w6-tj">כאן</a>      
+    
+    
+**נתקעתם? צריכים עזרה?**  
+אל תהססו לפנות לחברי הקהילה לעזרה, המטרה שלנו היא להגדיל את כמות התורמים לקוד פתוח בישראל, ונשמח לכוון ולהדריך אותכם בכניסה לעולם הקוד הפתוח.
