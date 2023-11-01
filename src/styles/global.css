@@ -8,4 +8,19 @@
     html {
         font-family: Heebo, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+
+    #search {
+        --pagefind-ui-scale: 1;
+        --pagefind-ui-primary: #FFD700; /* Gold color for primary actions and highlights */
+        --pagefind-ui-text: #F8F8F8; /* Light grey for text, ensuring it's readable against the dark background */
+        --pagefind-ui-background: #282c36; /* Dark grey as the background color */
+        --pagefind-ui-border: #444; /* Slightly lighter grey for borders */
+        --pagefind-ui-tag: #FFD700; /* Gold color for tags, matching the primary color */
+        --pagefind-ui-border-width: 2px;
+        --pagefind-ui-border-radius: 8px;
+        --pagefind-ui-image-border-radius: 8px;
+        --pagefind-ui-image-box-ratio: 3 / 2;
+        --pagefind-ui-font: 'Heebo', sans-serif; /* Using the Heebo font to match the rest of your site */
+    }
+
 }

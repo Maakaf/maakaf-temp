@@ -86,4 +86,31 @@ import BaseLayout from "@layouts/BaseLayout.astro";
        איך מגייסים מתכנתים דרך קהילת מעקף?
     </p>
   </section>
+  <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/pagefind/pagefind-ui.js" is:inline client:only="svelte"></script>
+  <div id="search" class="mt-3" ></div>
+  <script>
+    function initSearchComponent() {
+      // @ts-ignore
+      new PagefindUI({
+        element: "#search",
+        showSubResults: true,
+        translations: {
+          placeholder: "חיפוש",
+          zero_results: "לא מצאתי [SEARCH_TERM]",
+        }
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', initSearchComponent);
+
+    document.addEventListener('visibilitychange', function() {
+      if (document.visibilityState === 'visible') {
+        initSearchComponent();
+      }
+    });
+  </script>
+
+
+
 </BaseLayout>
