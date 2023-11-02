@@ -31,7 +31,7 @@ const container_style = content
 							class={`link link-secondary font-bold text-lg ${
 								lang === "he" && "text-right"
 							}`}
-							href={`/${collection}/${n.slug}`}
+							href={`${lang === "en" ? "/en" : ""}`+`/${collection}/${n.slug}`}
 						>
 							{n.data.title}
 						</a>
