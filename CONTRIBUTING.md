@@ -139,6 +139,12 @@ git push -u origin my-new-feature
 
 המדריך הזה הוא בהשראת [GitHub docs contributing guide](https://github.com/github/docs/blob/main/CONTRIBUTING.md?plain=1).
 
+## Adding Content in different languages
+
+We currently provide support for both Hebrew and English languages. To organize your content, please place your markdown files within the content directory under the relevant subdirectory.
+
+To filter the content for the desired language, make use of the lang property in the frontmatter of each markdown file. You can trust that it offers type safety, so there's no need to worry!
+
 ## Contributor License Agreement
 
 Contributions to this project must be accompanied by a Contributor License
