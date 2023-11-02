@@ -3,7 +3,9 @@ import NewbiesLayout from "@layouts/en/EnNewbiesLayout.astro";
 import { type CollectionEntry, getCollection } from "astro:content";
 
 export async function getStaticPaths() {
-  let posts = await getCollection("newbies");
+  let posts = await getCollection("newbies", ({data: {lang}}) => {
+    return lang === 'en'
+  });
 
   return (
     posts?.map((post) => ({

@@ -3,40 +3,41 @@ import { getCollection } from "astro:content";
 import type { CollectionType } from "../content/config";
 
 type Props = {
-	collection: CollectionType;
+  collection: CollectionType;
 };
 
 const { collection } = Astro.props;
 
 const lang = Astro.url.pathname.includes("/en") ? "en" : "he";
-const content = await getCollection(
-	collection,
-	({ data }) => data.lang === lang
-);
+const content = await getCollection(collection, ({ data }) => {
+  return data.lang === lang;
+});
 
 const container_style = content
-	? "h-fit shadow-2xl p-4 w-[40ch] m-4 border"
-	: "hidden";
+  ? "h-fit shadow-2xl p-4 w-[40ch] m-4 border"
+  : "hidden";
 ---
 
 <div class={container_style}>
-	<h1 class="leading-loose font-extrabold text-xl">
-		{lang === "en" ? "Content" : "תוכן עניינים"}
-		<div class="divider"></div>
-		<div class="menu menu-vertical gap-4">
-			{
-				content?.length > 0 &&
-					content.map((n) => (
-						<a
-							class={`link link-secondary font-bold text-lg ${
-								lang === "he" && "text-right"
-							}`}
-							href={`${lang === "en" ? "/en" : ""}`+`/${collection}/${n.slug}`}
-						>
-							{n.data.title}
-						</a>
-					))
-			}
-		</div>
-	</h1>
+  <h1 class="leading-loose font-extrabold text-xl">
+    {lang === "en" ? "Content" : "תוכן עניינים"}
+    <div class="divider"></div>
+    <div class="menu menu-vertical gap-4">
+      {
+        content?.length > 0 &&
+          content.map((n) => (
+            <a
+              class={`link link-secondary font-bold text-lg ${
+                lang === "he" && "text-right"
+              }`}
+              href={
+                `${lang === "en" ? "/en" : ""}` + `/${collection}/${n.slug}`
+              }
+            >
+              {n.data.title}
+            </a>
+          ))
+      }
+    </div>
+  </h1>
 </div>

@@ -18,7 +18,7 @@ const { collection } = Astro.props;
     <Header />
     <main class="flex flex-col md:flex-row">
       <SideNav collection={collection} />
-      <article class="mx-6 py-2 prose prose-th:text-right prose-td:text-right">
+      <article class="mx-6 py-2 prose">
         <slot />
       </article>
     </main>
