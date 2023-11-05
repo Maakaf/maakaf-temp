@@ -2,12 +2,14 @@
 import BaseHead from "@components/BaseHead.astro";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
+import SearchHeader from "@components/SearchHeader.astro";
 ---
 
 <html lang="he" dir="rtl">
   <BaseHead title="מעקף" description="האתר של מעקף - קהילת קוד פתוח ישראלית" />
   <body>
     <Header />
+    <SearchHeader />
     <main class="mx-6 md:max-w-2xl md:mx-auto py-2 prose">
       <slot />
     </main>
