@@ -1,7 +1,7 @@
 ---
 layout: "@layouts/MembersLayout.astro"
 ---
-<div dir="rtl">
+
 
 # ברוכים הבאים למעקף קהילת קוד פתוח
 
@@ -39,4 +39,4 @@ layout: "@layouts/MembersLayout.astro"
 
 ברוך הבא למעקף! בואו ניצור יחד דברים מדהימים.
    
-</div>
+
