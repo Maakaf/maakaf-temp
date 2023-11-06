@@ -39,6 +39,13 @@
 
 אם אתם לא בטוחים - צרו איתנו קשר ע"י תיוג באישיו / כתבו בדיסקורד.
 
+### התקנה מהירה
+משתמשי מאק יכולים להנות מהתקנה מהירה ע"י הרצת הפקודות הבאות:
+```shell
+brew install cocmd/tap/cocmd
+cocmd run maakaf.onboarding --from https://github.com/Maakaf/maakaf-temp
+```
+
 ### צרו Fork לריפו
 
 צרו בגיטהאב שלכם [Fork לפרויקט](https://github.com/Maakaf/maakaf-temp)

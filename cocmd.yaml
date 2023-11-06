@@ -1,0 +1,95 @@
+name: maakaf
+automations:
+  - name: onboarding
+    content:
+      description: "onboarding for Maakaf contributors"
+      env: osx
+      steps:
+        - title: Hello 👋👋👋
+          runner: markdown
+          content: |
+            ## Welcome to Maakaf Contributor onboarding 🎉🎉🎉
+            
+            This is a guide to getting started with Maakaf-temp development.
+            This will install all the tools you need to get started.
+
+            it's going to:
+            - install git
+            - install node
+            - install vscode
+            - clone all repo
+            - build 
+            - open the repos
+
+        - title: lets start
+          runner: shell
+          approval_message: Ready to start?
+          content: echo lets start
+        - title: install vscode
+          runner: cocmd
+          approval_message: install vscode?
+          content: vscode.setup
+        - title: install git
+          runner: cocmd
+          content: git.setup
+        - title: install github cli
+          runner: cocmd
+          content: git.setup.github
+        - title: install node
+          runner: cocmd
+          content: node.setup
+        - title: install pnpm
+          runner: cocmd 
+          content: node.setup.pnpm
+        - title: git clones
+          runner: shell
+          approval_message: We will now authenticate to Github and fork the repo. ready?
+          content: |
+            # using github-cli (gh) fork Maakaf/maakaf-temp to my personal account
+            gh auth login
+
+            # Fork the repository
+            gh repo fork Maakaf/maakaf-temp
+
+            # clone the forked repo
+            username=$(gh api user --jq '.login')
+            set +e
+            gh repo clone $username/maakaf-temp
+
+            open maakaf-temp
+
+        - title: run website
+          runner: shell
+          content: |
+            cd maakaf-temp
+            echo cleaning up
+            rm -rf node_modules
+            echo installing dependencies
+            pnpm i
+            echo "website ready to run - pnpm dev"
+            
+        - title: open IDEs
+          runner: shell
+          approval_message: To open the code with VSCode?
+          content: |
+            # check if vscode not installed
+            if code -v &> /dev/null
+            then
+              code maakaf-temp
+            else
+                echo "vscode could not be found. open maakaf-temp in your IDE of choice"
+            fi
+
+        - title: final message
+          runner: markdown
+          content: |
+            ## All done!
+            You're all set up to contribute to Maakaf. 
+            
+            Join us on discord - https://discord.gg/PzaBZade
+
+      
+
+        
+            
+            
