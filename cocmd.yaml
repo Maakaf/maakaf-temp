@@ -69,6 +69,7 @@ automations:
             echo installing dependencies
             pnpm i
             echo "website ready to run - pnpm dev"
+
         - title: add special vscode extensions
           runner: shell
           approval_message: This project uses Astro, Tailwind and more. Can we suggest adding some vscode extentions?
