@@ -4,7 +4,6 @@ import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import SideNav from "@components/SideNav.astro";
 import type { CollectionType } from "../content/config";
-import SearchHeader from "../components/SearchHeader.astro";
 
 type Props = {
   collection: CollectionType;
@@ -14,16 +13,15 @@ const { collection } = Astro.props;
 ---
 
 <html lang="he" dir="rtl">
-  <BaseHead title="מעקף" description="האתר של קהילת מעקף - קוד פתוח בישראל" />
-  <body>
-    <Header />
-    <SearchHeader />
-    <main class="flex flex-col md:flex-row">
-      <SideNav collection={collection} />
-      <article class="mx-6 py-2 prose prose-th:text-right prose-td:text-right">
-        <slot />
-      </article>
-    </main>
-    <Footer />
-  </body>
+<BaseHead title="מעקף" description="האתר של קהילת מעקף - קוד פתוח בישראל" />
+<body>
+<Header />
+<main class="flex flex-col md:flex-row">
+  <SideNav collection={collection} />
+  <article class="mx-6 py-2 prose prose-th:text-right prose-td:text-right">
+    <slot />
+  </article>
+</main>
+<Footer />
+</body>
 </html>
