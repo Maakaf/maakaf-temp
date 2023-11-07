@@ -55,19 +55,39 @@ automations:
             username=$(gh api user --jq '.login')
             set +e
             gh repo clone $username/maakaf-temp
+            
+            # add upstream
+            cd maakaf-temp
+            git remote add upstream git@github.com:Maakaf/maakaf-temp.git
 
-            open maakaf-temp
+            open .
 
         - title: run website
           runner: shell
           content: |
             cd maakaf-temp
-            echo cleaning up
-            rm -rf node_modules
             echo installing dependencies
             pnpm i
             echo "website ready to run - pnpm dev"
-            
+
+        - title: add special vscode extensions
+          runner: shell
+          approval_message: This project uses Astro, Tailwind and more. Can we suggest adding some vscode extentions?
+          content: |
+            # check if vscode not installed
+            if code -v &> /dev/null
+            then
+              # install astro extention
+              code --install-extension astro-build.astro-vscode
+              # install tailwind intellisense
+              code --install-extension bradlc.vscode-tailwindcss
+              # install prettier
+              code --install-extension esbenp.prettier-vscode
+              # install css intellisense
+              code --install-extension zignd.html-css-class-completion
+            else
+                echo "vscode could not be found. skipping..."
+            fi
         - title: open IDEs
           runner: shell
           approval_message: To open the code with VSCode?
