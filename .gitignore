@@ -3,6 +3,12 @@ dist/
 # generated types
 .astro/
 
+# Ignore JetBrains IDE configuration files
+.idea/
+
+# Ignore pagefind generated files
+public/pagefind/
+
 # dependencies
 node_modules/
 yarn.lock
