@@ -28,7 +28,7 @@ As a member of Ma'akaf, you have access to a world of services and opportunities
 
 5. **[Mentorship](/members/he_mentoring_project):** Looking to grow and learn from seasoned developers? We offer mentorship opportunities, connecting you with senior developers who can guide you on your open-source journey. Learn from the best and take your skills to the next level.
 
-6. **Contributing to Projects:** Our community hosts a variety of [projects](/en/members/en_projects_list), each with a helpful maintainer ready to assist you. Whether you're a newcomer or an experienced contributor, our projects offer a platform to collaborate and make meaningful contributions to the open-source world.
+6. **[Contributing to Projects](/members/en_projects_list):** Our community hosts a variety of [projects](/en/members/en_projects_list), each with a helpful maintainer ready to assist you. Whether you're a newcomer or an experienced contributor, our projects offer a platform to collaborate and make meaningful contributions to the open-source world.
 
 **Join the Mission**
 
