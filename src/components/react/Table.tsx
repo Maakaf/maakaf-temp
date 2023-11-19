@@ -8,11 +8,7 @@ import {
 interface TableProps {
   data: Record<string, string>[];
 }
-
 const Table = ({ data }: TableProps) => { 
-  
-  
-
   function validUrl(str: string) {
     let url;
 
@@ -26,12 +22,10 @@ const Table = ({ data }: TableProps) => {
   }
 
   function createColumns(data: Record<string, string>[]) {
-
     if (!data.length) return [] // return empty array if no data
     const columnHelper = createColumnHelper<typeof data[0]>()
     const dataColumns = [];
     for (const key in data[0]) {
-      
       dataColumns.push(columnHelper.accessor(key, {
         header: key,
         cell: info => validUrl(info.getValue())? <a target="_blank" href={info.getValue()}>{key}</a>: info.getValue() 
@@ -39,15 +33,13 @@ const Table = ({ data }: TableProps) => {
     }
     return dataColumns
   }
-
   const columns = createColumns(data)
   const table = useReactTable({
     data,
     columns,
     getCoreRowModel: getCoreRowModel(),
   })
-
-
+  
   return (
     <div className="p-2 overflow-y-auto w-full">
       <table className="table table-zebra border text-center">
@@ -90,5 +82,4 @@ const Table = ({ data }: TableProps) => {
     </div>
   );
 };
-
 export default Table;
