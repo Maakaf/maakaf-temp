@@ -2,8 +2,37 @@
 title: "List of projects"
 lang: "en"
 ---
-import SortTable from "@components/react/SortTable.tsx"
+
+import SortTable from "@components/react/SortTable.tsx";
 
 Here you will see a list with all the projects we have in our community.
 
-<SortTable client:only="react" />
+<SortTable
+  repositoryLinks={[
+    "https://github.com/Maakaf/maakaf-temp",
+    "https://github.com/Maakaf/maakaf-temp",
+    "https://github.com/os-scar/overlay",
+    "https://github.com/ealush/emoji-picker-react",
+    "https://github.com/sharkio-dev/sharkio",
+    "https://github.com/origranot/reduced.to",
+    "https://github.com/hasadna/open-bus-map-search",
+    "https://github.com/hasadna/open-bus-stride-api",
+    "https://github.com/Checkmarx/2ms",
+    "https://github.com/yonahd/kor",
+    "https://github.com/cocmd/cocmd",
+  ]}
+  discordLinks={[
+    "https://discord.gg/uZvKfvG7NU",
+    "https://discord.com/channels/1089589164707684443/1128754447309353000",
+    "https://discord.gg/eM855FN8m2",
+    "https://discord.gg/eM855FN8m2",
+    "https://discord.gg/SgFRc5NpGs",
+    "https://discord.gg/g6aTjecXNB",
+    "https://discord.gg/vbEEarj8y3",
+    "https://discord.gg/uzJpyBHkuD",
+    "https://discord.gg/TmW7tqmHH4",
+    "https://discord.gg/TmW7tqmHH4",
+    "https://discord.gg/sVwKDHQ84E",
+  ]}
+  client:only="react"
+/>
