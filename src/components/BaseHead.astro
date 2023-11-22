@@ -2,7 +2,7 @@
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
 import "../styles/global.css";
-import { ViewTransitions } from "astro:transitions";
+
 
 interface Props {
   title: string;
@@ -27,7 +27,7 @@ const { title, description } = Astro.props;
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
-<ViewTransitions />
+
 <meta name="title" content={title} />
 <meta name="description" content={description} />
 <!-- Open Graph / Facebook -->

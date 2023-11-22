@@ -3,6 +3,12 @@ dist/
 # generated types
 .astro/
 
+# Ignore JetBrains IDE configuration files
+.idea/
+
+# Ignore pagefind generated files
+public/pagefind/
+
 # dependencies
 node_modules/
 yarn.lock
@@ -21,4 +27,6 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
+#VScode config
 .vscode/
+
