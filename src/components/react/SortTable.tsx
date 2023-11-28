@@ -10,6 +10,9 @@ import {
 import { ClipLoader } from "react-spinners";
 import { Octokit } from "@octokit/rest";
 
+import githubLogo from "@assets/images/members/github-logo.png";
+import discordLogo from "@assets/images/members/discord-logo.png";
+
 interface GitHubRepository {
   name: string;
   language: string;
@@ -87,36 +90,68 @@ function SortTable({ repositoryLinks, discordLinks }: SortTableProps) {
       },
       {
         accessorKey: "language",
-        header: () => "Programming Language",
+        header: () => (
+          <>
+            Programming<br/>Language
+          </>
+        ),
       },
       {
         accessorKey: "short_description",
-        header: () => "Short Description",
+        header: () => (
+          <>
+            Short<br/>Description
+          </>
+        ),
       },
       {
         accessorKey: "html_url",
-        header: () => "Project Link",
+        header: () => (
+          <>
+            Project<br/>Link
+          </>
+        ),
         cell: (info) => (
           <a
             href={info.row.original.html_url}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {info.row.original.html_url}
+            <img
+              src={githubLogo.src}
+              alt="Github Logo"
+              style={{
+                width: "30px",
+                display: "block",
+                margin: "auto",
+              }}
+            />
           </a>
         ),
         getCanSort: () => false,
       },
       {
         accessorKey: "discord_link",
-        header: () => "Discord Link",
+        header: () => (
+          <>
+            Discord<br/>Link
+          </>
+        ),
         cell: (info) => (
           <a
             href={info.row.original.discord_link}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {info.row.original.discord_link}
+            <img
+              src={discordLogo.src}
+              alt="Discord Logo"
+              style={{
+                width: "30px",
+                display: "block",
+                margin: "auto",
+              }}
+            />
           </a>
         ),
       },
@@ -126,7 +161,11 @@ function SortTable({ repositoryLinks, discordLinks }: SortTableProps) {
       },
       {
         accessorKey: "pushed_at",
-        header: () => "Last Commit Date",
+        header: () => (
+          <>
+            Last<br/>Commit Date
+          </>
+        ),
         cell: (info) =>
           new Date(info.row.original.pushed_at).toLocaleDateString(),
       },
