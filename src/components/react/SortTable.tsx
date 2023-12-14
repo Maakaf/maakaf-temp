@@ -24,52 +24,51 @@ interface GitHubRepository {
   discord_link: string;
 }
 
-interface SortTableProps {
-  repositoryLinks: string[];
-  discordLinks: string[];
+interface ProjectData {
+  githubLink: string;
+  discordLink: string;
 }
 
-function SortTable({ repositoryLinks, discordLinks }: SortTableProps) {
+function SortTable({ projectData }: { projectData: ProjectData[] }) {
   const [sorting, setSorting] = useState<SortingState>([]);
   const [repositories, setRepositories] = useState<GitHubRepository[]>([]);
   const [filteredData, setFilteredData] = useState<GitHubRepository[]>([]);
   const [loading, setLoading] = useState(true);
   const [languageFilter, setLanguageFilter] = useState<string | null>(null);
 
-  useEffect(() => {
-    (async () => {
-      try {
-        const octokit = new Octokit();
+useEffect(() => {
+  (async () => {
+    try {
+      const octokit = new Octokit();
 
-        const repositoriesData = await Promise.all(
-          repositoryLinks.map(async (link, index) => {
-            const [owner, repo] = link.split("/").slice(-2);
+      const repositoriesData = await Promise.all(
+        projectData.map(async ({ githubLink, discordLink }) => {
+          const [owner, repo] = githubLink.split('/').slice(-2);
+          const { data } = await octokit.repos.get({ owner, repo });
 
-            const { data } = await octokit.repos.get({ owner, repo });
+          return {
+            name: data.name,
+            language: data.language || "N/A",
+            html_url: data.html_url,
+            description: data.description || "",
+            stargazers_count: data.stargazers_count || 0,
+            pushed_at: data.pushed_at,
+            short_description: data.description
+              ? data.description.split("\n")[0]
+              : "",
+            discord_link: discordLink || "",
+          };
+        })
+      );
 
-            return {
-              name: data.name,
-              language: data.language || "N/A",
-              html_url: data.html_url,
-              description: data.description || "",
-              stargazers_count: data.stargazers_count || 0,
-              pushed_at: data.pushed_at,
-              short_description: data.description
-                ? data.description.split("\n")[0]
-                : "",
-              discord_link: discordLinks[index] || "",
-            };
-          })
-        );
-
-        setRepositories(repositoriesData);
-        setFilteredData(repositoriesData);
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching data from GitHub:", error);
-      }
-    })();
-  }, [repositoryLinks, discordLinks]);
+      setRepositories(repositoriesData);
+      setFilteredData(repositoriesData);
+      setLoading(false);
+    } catch (error) {
+      console.error("Error fetching data from GitHub:", error);
+    }
+  })();
+}, [projectData]);
 
   useEffect(() => {
     if (languageFilter) {
@@ -92,7 +91,9 @@ function SortTable({ repositoryLinks, discordLinks }: SortTableProps) {
         accessorKey: "language",
         header: () => (
           <>
-            Programming<br/>Language
+            Programming
+            <br />
+            Language
           </>
         ),
       },
@@ -100,7 +101,9 @@ function SortTable({ repositoryLinks, discordLinks }: SortTableProps) {
         accessorKey: "short_description",
         header: () => (
           <>
-            Short<br/>Description
+            Short
+            <br />
+            Description
           </>
         ),
       },
@@ -108,7 +111,9 @@ function SortTable({ repositoryLinks, discordLinks }: SortTableProps) {
         accessorKey: "html_url",
         header: () => (
           <>
-            Project<br/>Link
+            Project
+            <br />
+            Link
           </>
         ),
         cell: (info) => (
@@ -128,13 +133,14 @@ function SortTable({ repositoryLinks, discordLinks }: SortTableProps) {
             />
           </a>
         ),
-        getCanSort: () => false,
       },
       {
         accessorKey: "discord_link",
         header: () => (
           <>
-            Discord<br/>Link
+            Discord
+            <br />
+            Link
           </>
         ),
         cell: (info) => (
@@ -163,7 +169,9 @@ function SortTable({ repositoryLinks, discordLinks }: SortTableProps) {
         accessorKey: "pushed_at",
         header: () => (
           <>
-            Last<br/>Commit Date
+            Last
+            <br />
+            Commit Date
           </>
         ),
         cell: (info) =>
@@ -186,6 +194,11 @@ function SortTable({ repositoryLinks, discordLinks }: SortTableProps) {
     getSortedRowModel: getSortedRowModel(),
     debugTable: true,
   });
+
+  const shouldSort = (columnId: string) => {
+    const sortableColumns = ["language", "stargazers_count", "pushed_at"];
+    return sortableColumns.includes(columnId);
+  };
 
   return (
     <div className="p-2 w-full">
@@ -223,10 +236,12 @@ function SortTable({ repositoryLinks, discordLinks }: SortTableProps) {
                     >
                       <div
                         {...{
-                          className: header.column.getCanSort()
+                          className: shouldSort(header.column.id)
                             ? "cursor-pointer select-none"
                             : "",
-                          onClick: header.column.getToggleSortingHandler(),
+                          onClick: shouldSort(header.column.id)
+                            ? header.column.getToggleSortingHandler()
+                            : undefined,
                         }}
                       >
                         <span className="text-lg">
@@ -235,11 +250,13 @@ function SortTable({ repositoryLinks, discordLinks }: SortTableProps) {
                             header.getContext()
                           )}
                         </span>
-                        {header.column.getCanSort() && (
+                        {shouldSort(header.column.id) && (
                           <span>
                             {header.column.getIsSorted() === "asc"
                               ? " 🔼"
-                              : " 🔽"}
+                              : header.column.getIsSorted() === "desc"
+                              ? " 🔽"
+                              : " ↕️"}
                           </span>
                         )}
                       </div>

@@ -7,32 +7,54 @@ import SortTable from "@components/react/SortTable.tsx";
 
 Here you will see a list with all the projects we have in our community.
 
+projectData={[
+    {
+      githubLink: "https://github.com/Maakaf/maakaf-temp",
+      discordLink: "https://discord.gg/uZvKfvG7NU",
+    },
+    {
+      githubLink: "https://github.com/Maakaf/maakaf-temp",
+      discordLink: "https://discord.com/channels/1089589164707684443/1128754447309353000",
+    },
+    {
+      githubLink: "https://github.com/os-scar/overlay",
+      discordLink: "https://discord.gg/eM855FN8m2",
+    },
+    {
+      githubLink: "https://github.com/ealush/emoji-picker-react",
+      discordLink: "https://discord.gg/eM855FN8m2",
+    },
+    {
+      githubLink: "https://github.com/sharkio-dev/sharkio",
+      discordLink: "https://discord.gg/SgFRc5NpGs",
+    },
+    {
+      githubLink: "https://github.com/origranot/reduced.to",
+      discordLink: "https://discord.gg/g6aTjecXNB",
+    },
+    {
+      githubLink: "https://github.com/hasadna/open-bus-map-search",
+      discordLink: "https://discord.gg/vbEEarj8y3",
+    },
+    {
+      githubLink: "https://github.com/hasadna/open-bus-stride-api",
+      discordLink: "https://discord.gg/uzJpyBHkuD",
+    },
+    {
+      githubLink: "https://github.com/Checkmarx/2ms",
+      discordLink: "https://discord.gg/TmW7tqmHH4",
+    },
+    {
+      githubLink: "https://github.com/yonahd/kor",
+      discordLink: "https://discord.gg/TmW7tqmHH4",
+    },
+    {
+      githubLink: "https://github.com/cocmd/cocmd",
+      discordLink: "https://discord.gg/sVwKDHQ84E",
+    },
+  ]}
+
 <SortTable
-  repositoryLinks={[
-    "https://github.com/Maakaf/maakaf-temp",
-    "https://github.com/Maakaf/maakaf-temp",
-    "https://github.com/os-scar/overlay",
-    "https://github.com/ealush/emoji-picker-react",
-    "https://github.com/sharkio-dev/sharkio",
-    "https://github.com/origranot/reduced.to",
-    "https://github.com/hasadna/open-bus-map-search",
-    "https://github.com/hasadna/open-bus-stride-api",
-    "https://github.com/Checkmarx/2ms",
-    "https://github.com/yonahd/kor",
-    "https://github.com/cocmd/cocmd",
-  ]}
-  discordLinks={[
-    "https://discord.gg/uZvKfvG7NU",
-    "https://discord.com/channels/1089589164707684443/1128754447309353000",
-    "https://discord.gg/eM855FN8m2",
-    "https://discord.gg/eM855FN8m2",
-    "https://discord.gg/SgFRc5NpGs",
-    "https://discord.gg/g6aTjecXNB",
-    "https://discord.gg/vbEEarj8y3",
-    "https://discord.gg/uzJpyBHkuD",
-    "https://discord.gg/TmW7tqmHH4",
-    "https://discord.gg/TmW7tqmHH4",
-    "https://discord.gg/sVwKDHQ84E",
-  ]}
+  {projectData}
   client:only="react"
 />
