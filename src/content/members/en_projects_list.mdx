@@ -1,13 +1,10 @@
 ---
 title: "List of projects"
 lang: "en"
----
 
 import SortTable from "@components/react/SortTable.tsx";
 
-Here you will see a list with all the projects we have in our community.
-
-projectData={[
+projectData=[
     {
       githubLink: "https://github.com/Maakaf/maakaf-temp",
       discordLink: "https://discord.gg/uZvKfvG7NU",
@@ -52,8 +49,9 @@ projectData={[
       githubLink: "https://github.com/cocmd/cocmd",
       discordLink: "https://discord.gg/sVwKDHQ84E",
     },
-  ]}
+  ]
 
+---
 <SortTable
   {projectData}
   client:only="react"
