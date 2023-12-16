@@ -1,79 +1,46 @@
 [
   {
-    "Project name": "Ma'akaf Website",
-    "Project link": "https://github.com/Maakaf/maakaf-temp",
-    "Discord link": "https://discord.gg/uZvKfvG7NU",
-    "Programming language": "Javascript",
-    "Tags": ""
+    "githubLink": "https://github.com/Maakaf/maakaf-temp",
+    "discordLink": "https://discord.gg/uZvKfvG7NU"
   },
   {
-    "Project name": "Arduinojs",
-    "Project link": "https://github.com/Maakaf/maakaf-temp",
-    "Discord link": "https://discord.com/channels/1089589164707684443/1128754447309353000",
-    "Programming language": "Javascript",
-    "Tags": ""
+    "githubLink": "https://github.com/Maakaf/maakaf-temp",
+    "discordLink": "https://discord.com/channels/1089589164707684443/1128754447309353000"
   },
   {
-    "Project name": "Overlay",
-    "Project link": "https://github.com/os-scar/overlay",
-    "Discord link": "https://discord.gg/eM855FN8m2",
-    "Programming language": "Javascript",
-    "Tags": "tension, supply-chain, advisory"
+    "githubLink": "https://github.com/os-scar/overlay",
+    "discordLink": "https://discord.gg/eM855FN8m2"
   },
   {
-    "Project name": "emoji-picker-react",
-    "Project link": "https://github.com/ealush/emoji-picker-react",
-    "Discord link": "https://discord.gg/eM855FN8m2",
-    "Programming language": "Javascript",
-    "Tags": "react, emoji picker, emoji-picker, emojis, hacktoberfest, react-emoji-picker, emoji-picker-react"
+    "githubLink": "https://github.com/ealush/emoji-picker-react",
+    "discordLink": "https://discord.gg/eM855FN8m2"
   },
   {
-    "Project name": "Sharkio",
-    "Project link": "https://github.com/sharkio-dev/sharkio",
-    "Discord link": "https://discord.gg/SgFRc5NpGs",
-    "Programming language": "Javascript",
-    "Tags": "typescript, ai, backend, reactjs, hacktoberfest, good-first-issue, hacktoberfest-accepted, hacktoberfest2023"
+    "githubLink": "https://github.com/sharkio-dev/sharkio",
+    "discordLink": "https://discord.gg/SgFRc5NpGs"
   },
   {
-    "Project name": "reduced.to",
-    "Project link": "https://github.com/origranot/reduced.to",
-    "Discord link": "https://discord.gg/g6aTjecXNB",
-    "Programming language": "Javascript",
-    "Tags": "nodejs, css, html, docker, typescript, url-shortener, hacktoberfest, nx, contributions-welcome, nestjs, tailwindcss, qwik"
+    "githubLink": "https://github.com/origranot/reduced.to",
+    "discordLink": "https://discord.gg/g6aTjecXNB"
   },
   {
-    "Project name": "open-bus-map-search",
-    "Project link": "https://github.com/hasadna/open-bus-map-search",
-    "Discord link": "https://github.com/hasadna/open-bus-map-search",
-    "Programming language": "Javascript",
-    "Tags": "react, jest, bus, transportation, hacktoberfest, israel, mot, transportation-planning, playwright, playwright-javascript"
+    "githubLink": "https://github.com/hasadna/open-bus-map-search",
+    "discordLink": "https://discord.gg/vbEEarj8y3"
   },
   {
-    "Project name": "open-bus-stride-api",
-    "Project link": "https://github.com/hasadna/open-bus-stride-api",
-    "Discord link": "https://discord.gg/uzJpyBHkuD",
-    "Programming language": "Javascript",
-    "Tags": ""
+    "githubLink": "https://github.com/hasadna/open-bus-stride-api",
+    "discordLink": "https://discord.gg/uzJpyBHkuD"
   },
   {
-    "Project name": "2ms",
-    "Project link": "https://github.com/Checkmarx/2ms",
-    "Discord link": "https://discord.gg/TmW7tqmHH4",
-    "Programming language": "Go",
-    "Tags": "security, secret-management, secrets, appsec, secret-keys, api-keys"
+    "githubLink": "https://github.com/Checkmarx/2ms",
+    "discordLink": "https://discord.gg/TmW7tqmHH4"
   },
   {
-    "Project name": "kor",
-    "Project link": "https://github.com/yonahd/kor",
-    "Discord link": "https://discord.gg/TmW7tqmHH4",
-    "Programming language": "Go",
-    "Tags": "go, kubernetes, golang, k8s, resource-management"
+    "githubLink": "https://github.com/yonahd/kor",
+    "discordLink": "https://discord.gg/TmW7tqmHH4"
   },
   {
-    "Project name": "CoCMD",
-    "Project link": "https://github.com/cocmd/cocmd",
-    "Discord link": "https://discord.gg/sVwKDHQ84E",
-    "Programming language": "Rust", 
-    "Tags": "rust, productivity, devtools, cmd"
+    "githubLink": "https://github.com/cocmd/cocmd",
+    "discordLink": "https://discord.gg/sVwKDHQ84E"
   }
 ]
