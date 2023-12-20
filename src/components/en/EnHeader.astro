@@ -1,5 +1,7 @@
 ---
 import HeaderLink from "../HeaderLink.astro";
+import { Image } from "astro:assets";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 ---
 
 <header class="navbar bg-base-100 shadow-2xl mb-4">
@@ -43,7 +45,8 @@ import HeaderLink from "../HeaderLink.astro";
 			</ul>
 		</div>
 
-		<a href="/en/" class="btn btn-ghost normal-case text-xl">Maakaf</a>
+		<a href="/" class="btn btn-ghost normal-case text-xl">
+			<Image class="h-8 w-auto" src="/images/favicon.png" width="300" height="300" alt="Maakaf" /></a>
 	</div>
 
 	<div class="navbar-start hidden md:flex">
@@ -87,6 +90,9 @@ import HeaderLink from "../HeaderLink.astro";
 				</HeaderLink>
 			</li>
 		</ul>
-		<a href="/" class="btn btn-ghost btn-sm">עברית</a>
+		<a href="/" class="btn btn-ghost btn-sm">
+			עברית
+			<span class="fi fi-il"></span>
+		</a>
 	</div>
 </header>
