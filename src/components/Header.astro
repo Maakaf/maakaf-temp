@@ -1,91 +1,102 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
+import { Image } from "astro:assets";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
 ---
 
 <header class="navbar bg-base-100 shadow-2xl mb-4">
-	<div>
-		<div class="dropdown">
-			<label tabindex="0" class="btn btn-ghost md:hidden">
-				<svg
-					class="w-5 h-5"
-					aria-hidden="true"
-					xmlns="http://www.w3.org/2000/svg"
-					fill="none"
-					viewBox="0 0 17 14"
-				>
-					<path
-						stroke="currentColor"
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M1 1h15M1 7h15M1 13h15"></path>
-				</svg>
-			</label>
-			<ul
-				tabindex="0"
-				class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 [&_li]:ml-auto [&_li]:btn-ghost [&_li]:px-4"
-			>
-				<li>
-					<HeaderLink href="/newbies">מתחילים</HeaderLink>
-				</li>
-				<li>
-					<HeaderLink href="/members">חברים</HeaderLink>
-				</li>
-				<li>
-					<HeaderLink href="/maintainers">מתחזקים</HeaderLink>
-				</li>
-				<li>
-					<HeaderLink href="/sponsors">ספונסרים</HeaderLink>
-				</li>
-				<li>
-					<HeaderLink href="/recruiters">מגייסים</HeaderLink>
-				</li>
-			</ul>
-		</div>
+  <div>
+    <div class="dropdown">
+      <label tabindex="0" class="btn btn-ghost md:hidden">
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15"></path>
+        </svg>
+      </label>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 [&_li]:ml-auto [&_li]:btn-ghost [&_li]:px-4"
+      >
+        <li>
+          <HeaderLink href="/newbies">מתחילים</HeaderLink>
+        </li>
+        <li>
+          <HeaderLink href="/members">חברים</HeaderLink>
+        </li>
+        <li>
+          <HeaderLink href="/maintainers">מתחזקים</HeaderLink>
+        </li>
+        <li>
+          <HeaderLink href="/sponsors">ספונסרים</HeaderLink>
+        </li>
+        <li>
+          <HeaderLink href="/recruiters">מגייסים</HeaderLink>
+        </li>
+      </ul>
+    </div>
 
-		<a href="/" class="btn btn-ghost normal-case text-xl">מעקף</a>
-	</div>
+    <a href="/" class="btn btn-ghost normal-case text-xl">
+      <Image class="h-8 w-auto" src="/images/favicon.png" width="300" height="300" alt="Maakaf" /></a>
+  </div>
 
-	<div class="navbar-start hidden md:flex">
-		<ul class="menu menu-horizontal px-1">
-			<li>
-				<HeaderLink href="/newbies">מתחילים</HeaderLink>
-			</li>
-			<li>
-				<HeaderLink href="/members">חברים</HeaderLink>
-			</li>
-			<li>
-				<HeaderLink href="/maintainers">מתחזקים</HeaderLink>
-			</li>
-			<li>
-				<HeaderLink href="/sponsors">ספונסרים</HeaderLink>
-			</li>
-			<li>
-				<HeaderLink href="/recruiters">מגייסים</HeaderLink>
-			</li>
-		</ul>
-	</div>
-	<div class="navbar-end flex items-center">
-		<ul class="menu menu-horizontal p-0">
-			<li>
-				<HeaderLink
-					href="/search"
-					className="focus-outline p-2 sm:p-1 flex items-center"
-				ariaLabel="search"
-				title="Search"
-				>
-					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="white" viewBox="0 0 24 24">
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							stroke-width="1.5"
-							d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"
-						></path>
-					</svg>
-
-				</HeaderLink>
-			</li>
-		</ul>
-		<a href="/en" class="btn btn-ghost btn-sm rounded-btn">English</a>
-	</div>
+  <div class="navbar-start hidden md:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li>
+        <HeaderLink href="/newbies">מתחילים</HeaderLink>
+      </li>
+      <li>
+        <HeaderLink href="/members">חברים</HeaderLink>
+      </li>
+      <li>
+        <HeaderLink href="/maintainers">מתחזקים</HeaderLink>
+      </li>
+      <li>
+        <HeaderLink href="/sponsors">ספונסרים</HeaderLink>
+      </li>
+      <li>
+        <HeaderLink href="/recruiters">מגייסים</HeaderLink>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-end flex items-center">
+    <ul class="menu menu-horizontal p-0">
+      <li>
+        <HeaderLink
+          href="/search"
+          className="focus-outline p-2 sm:p-1 flex items-center"
+          ariaLabel="search"
+          title="Search"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            stroke="white"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M19.023 16.977a35.13 35.13 0 0 1-1.367-1.384c-.372-.378-.596-.653-.596-.653l-2.8-1.337A6.962 6.962 0 0 0 16 9c0-3.859-3.14-7-7-7S2 5.141 2 9s3.14 7 7 7c1.763 0 3.37-.66 4.603-1.739l1.337 2.8s.275.224.653.596c.387.363.896.854 1.384 1.367l1.358 1.392.604.646 2.121-2.121-.646-.604c-.379-.372-.885-.866-1.391-1.36zM9 14c-2.757 0-5-2.243-5-5s2.243-5 5-5 5 2.243 5 5-2.243 5-5 5z"
+            ></path>
+          </svg>
+        </HeaderLink>
+      </li>
+    </ul>
+    <a class="dropdown-item" href="/en"
+          >English
+          <span class="fi fi-gb"></span>
+        </a>
+  </div>
 </header>

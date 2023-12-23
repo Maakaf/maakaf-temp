@@ -32,6 +32,9 @@ dependencies:
   daisyui:
     specifier: ^3.9.2
     version: 3.9.2
+  flag-icons:
+    specifier: ^7.1.0
+    version: 7.1.0
   lunr:
     specifier: ^2.3.9
     version: 2.3.9
@@ -2040,6 +2043,10 @@ packages:
     dependencies:
       micromatch: 4.0.5
       pkg-dir: 4.2.0
+    dev: false
+
+  /flag-icons@7.1.0:
+    resolution: {integrity: sha512-AH4v++19bpC5P3Wh767top4wylJYJCWkFnvNiDqGHDxqSqdMZ49jpLXp8PWBHTTXaNQ+/A+QPrOwyiIGaiIhmw==}
     dev: false
 
   /fraction.js@4.3.7:
