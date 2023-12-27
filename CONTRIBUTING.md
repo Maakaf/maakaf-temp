@@ -61,6 +61,8 @@ cd maakaf-temp
 
 ### התקינו ספריות
 
+התקנת הספריות דורשת nodejs מגרסא 14.22+
+
 Please use [pnpm](https://pnpm.io/installation) as package manger instead of npm
 
 ```shell
