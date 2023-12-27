@@ -78,6 +78,7 @@ pnpm remove
 
 # run a script from package.json
 pnpm <script-name>
+# For example:
 pnpm dev
 pnpm build
 ```
