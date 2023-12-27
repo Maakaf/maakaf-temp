@@ -70,13 +70,13 @@ Please use [pnpm](https://pnpm.io/installation) as package manger instead of npm
 # install dependencies
 pnpm i
 
-# add new packages
+# add new packages, if needed
 pnpm add
 
-# remove unused packages
+# remove unused packages, if needed
 pnpm remove
 
-# run script from package.json
+# run a script from package.json
 pnpm <script-name>
 pnpm dev
 pnpm build
