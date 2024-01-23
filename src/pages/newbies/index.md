@@ -26,8 +26,8 @@ layout: "@layouts/NewbiesLayout.astro"
 #### איך תורמים קוד?
 
 אם לא תרמתם מעולם לקוד פתוח, ניתן לתרגל אצלנו תרומה ראשונה (סך הכל להוסיף קובץ טקסט לפרוייקט).  
-פתחנו במיוחד עבורכם [פרוייקט נסיוני](https://github.com/UrielOfir/os-practice) אליו תוכלו לבצע תרומות קוד כדי ללמוד איך מתבצעת תרומת קוד בגיט-האב.  
-יש גם [מדריך מפורט שמסביר איך לתרום לפרוייקט הזה](https://github.com/UrielOfir/os-practice).
+פתחנו במיוחד עבורכם <a target="_blank" href="https://github.com/UrielOfir/os-practice">פרויקט נסיוני</a> אליו תוכלו לבצע תרומות קוד כדי ללמוד איך מתבצעת תרומת קוד בגיט-האב.  
+יש גם <a target="_blank" href="https://github.com/UrielOfir/os-practice">מדריך מפורט שמסביר איך לתרום לפרוייקט הזה</a>.
 
 #### קישורים נוספים:
 **קבוצת עדכונים שקטה בוואטספ:** <a target= "_blank" href="https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts">כאן</a>  

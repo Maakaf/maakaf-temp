@@ -21,11 +21,11 @@ layout: "@layouts/RecruitersLayout.astro"
 - **יוזמה -**  
 רק מתכנת שאוהב את המקצוע, ואוהב לכתוב קוד, ייזום ויבצע תרומה לקוד פתוח. מדובר במתכנתים שלא מחכים להוראות ורק אז מקדמים את הפרוייקט, אלא במתכתנים עם תשוקה וראש גדול שמעוניינים ליזום ולעשות גם כשאין כלפיהם דרישה מיידית.
 
-### [לחצו כאן כדי להצטרף לערוץ הדיסקורד בנושא קריירה](https://discord.gg/Vzm7YjkswT)
+### <a href="https://discord.gg/Vzm7YjkswT" target="_blank">לחצו כאן כדי להצטרף לערוץ הדיסקורד בנושא קריירה</a>
 
-### [לחצו כאן כדי להצטרף לקבוצת הוואטסאפ למחפשי עבודה](https://chat.whatsapp.com/LkKQy7TYk2LAE8Zbpzu1ik) 
+### <a href="https://chat.whatsapp.com/LkKQy7TYk2LAE8Zbpzu1ik" target="_blank">לחצו כאן כדי להצטרף לקבוצת הוואטסאפ למחפשי עבודה</a>
 
 ## לפרטים נוספים ומציאת הטאלנטים הבאים שלכם, ניתן לפנות למייסד הקהילה אוריאל אופיר.  
-אפשר ליצור עם אוריאל קשר בלינקדין- [LinkedIn](https://www.linkedin.com/in/uriel-ofir/) 
+אפשר ליצור עם אוריאל קשר בלינקדין - <a href="https://www.linkedin.com/in/uriel-ofir/" target="_blank">LinkedIn</a> 
 
 
