@@ -12,8 +12,8 @@ lang: "he"
 
 **לפני שנתחיל**
 
-- צפו בסרטון ההדרכה הקצר [איך להתחיל לתרום לקוד פתוח](https://youtu.be/IVNxfbHNHZk?si=CCX2i2qwxyKNfuSS), שמדגים את כל מה שנציג במדריך הזה
-- היכנסו [לפרויקט התרגול](https://github.com/UrielOfir/os-practice)
+- צפו בסרטון ההדרכה הקצר <a target="_blank" href="https://youtu.be/IVNxfbHNHZk?si=CCX2i2qwxyKNfuSS">איך להתחיל לתרום לקוד פתוח</a>, שמדגים את כל מה שנציג במדריך הזה.
+- היכנסו <a target="_blank" href="https://github.com/UrielOfir/os-practice">לפרויקט התרגול</a>.
 
 ## מה נעשה בתרגול הזה?
 

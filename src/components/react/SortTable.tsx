@@ -175,7 +175,7 @@ useEffect(() => {
           </>
         ),
         cell: (info) =>
-          new Date(info.row.original.pushed_at).toLocaleDateString(),
+          new Date(info.row.original.pushed_at).toLocaleDateString("he-il"),
       },
     ],
     []
