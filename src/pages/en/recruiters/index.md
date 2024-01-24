@@ -12,12 +12,12 @@ Are you a recruiter or employer on the hunt for top-tier talent in the ever-evol
 Our bustling Discord server hosts over 1300 community members. It's a dynamic hub where you can directly engage with developers, explore their interests, and assess their skills. Don't miss out on the opportunity to connect with passionate and skilled individuals.
 For recruiters, our Discord server provides a dedicated career discussions channel. This space is ideal for initiating conversations, sharing job opportunities, and connecting with potential candidates.
 
-🔗 [Access the Discord Career Discussions Channel](https://discord.gg/Vzm7YjkswT)
+🔗 <a target="_blank" href="https://discord.gg/Vzm7YjkswT">Access the Discord Career Discussions Channel</a>
 
 ### Join the Job Seekers WhatsApp Group:
 Ma'akaf offers a WhatsApp group tailored for job seekers. It's a valuable resource for recruiters, connecting you with individuals actively seeking opportunities.
 
-🔗 [Access the WhatsApp Job Seekers Group](https://chat.whatsapp.com/LkKQy7TYk2LAE8Zbpzu1ik)
+🔗 <a target="_blank" href="https://chat.whatsapp.com/LkKQy7TYk2LAE8Zbpzu1ik">Access the WhatsApp Job Seekers Group</a>
 
 ## Approaching and Recruiting Talent
 

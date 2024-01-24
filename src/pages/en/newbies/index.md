@@ -25,7 +25,7 @@ layout: "@layouts/en/EnNewbiesLayout.astro"
 
 #### How to Contribute Code?
 
-If you've never contributed to open source before, you can practice your first contribution with us (simply adding a text file to a project). We've created a special [experimental project](https://github.com/UrielOfir/os-practice) where you can make code contributions to learn how code contributions work on GitHub. There is also a [detailed guide explaining how to contribute to this project](https://github.com/UrielOfir/os-practice).
+If you've never contributed to open source before, you can practice your first contribution with us (simply adding a text file to a project). We've created a special <a target="_blank" href="https://github.com/UrielOfir/os-practice">experimental project</a> where you can make code contributions to learn how code contributions work on GitHub. There is also a <a target="_blank" href="https://github.com/UrielOfir/os-practice">detailed guide explaining how to contribute to this project.</a>
 
 #### Additional Links:
 **WhatsApp Quiet Updates Group:** <a target="_blank" href="https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts">Here</a>
