@@ -4,37 +4,87 @@ import BaseLayout from "@layouts/en/EnBaseLayout.astro";
 ---
 
 <BaseLayout>
-  <h1>Welcome to Maakaf community website !</h1>
+  <h1>Welcome to Maakaf community website!</h1>
 
+  <p class="prose">
+      Maakaf is an 
+      <b>Israeli open-source community</b>. <br />
+      We are interested in encouraging innovation, creativity and answering the problems that exist in today's development world.
+      <br />
+      Developers rely on open-source libraries to support their existing code base, some of the most popular code libraries today are open-source libraries.
+      <br />
+      We are interested in encouraging the existence of this community and establishing it as one of the most prolific programmers' communitiy in the country.
+      <br />
+      <br />
+      We believe that contributing to open-source can be an opening for finding unexpected talents in the development world, which can help recruiters and leaders in various companies to find quality people and establish their qualities quickly.
+      <br />
+       Our community is filled with talented people which are highly motivated to learn and develop their skills.
+
+      <h2>
+        There are more than 1300 members in the community,<br>
+        and more than 20 active projects!
+      </h2>
+  
+      <h3>The most interesting things in our community:</h3>
+      <ul>
+        <li><a href="en/members/en_projects_list">The community projects' list that you can join</a></li>
+        <li><a href="https://maakaf.netlify.app/members/he_mentoring_project/">The mentoring project - experienced developers help new developers at the start of their careers</a></li> <!-- צריך להחליף -->
+        <li><a href="https://discord.com/invite/a2VyCjRk2M" target="_blank">Join the community's Discord server</a></li>
+        <li><a href="https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts" target="_blank">Join our silent WhatsApp group for updates only</a></li>
+      </ul>
+        
+      <br />
+    <h3>How can you connect to the activity in our community?</h3>
+  </p>
   <section
-    class="flex flex-wrap items-center justify-center not-prose md:mx-[-8rem] md:w-[48rem] gap-4"
-  >
-    <BigLink 
-      title="Newbies" 
-      text="TARGEM OTI LE-INGLISH" 
-      href="/en/newbies" 
-    />
-    <BigLink 
-      title="Members" 
-      text="TARGEM OTI LE-INGLISH" 
-      href="/en/members" 
-    />
-    <BigLink
-      title="Maintainers"
-      text="TARGEM OTI LE-INGLISH"
-      href="/en/maintainers"
-    />
-    <BigLink
-      title="Sponsors"
-      text="TARGEM OTI LE-INGLISH"
-      href="/en/sponsors"
-    />
-    <BigLink
-      title="Recruiters"
-      text="TARGEM OTI LE-INGLISH"
-      href="/en/recruiters"
-    />
-  </section>
+  class="flex flex-wrap items-stretch items-center justify-center not-prose md:mx-[-8rem] gap-4">
+  <div class="card w-full md:w-1/4 bg-base-200 shadow-xl border-2 border-slate-400">
+    <div class="card-body">
+      <h2 class="card-title text-2xl font-bold">Newbies</h2>
+      <p>First time in open-source</p>
+      <div class="card-actions justify-end">
+        <a role="button" class="btn btn-outline" href="/newbies">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="card w-full md:w-1/4 bg-base-200 shadow-xl border-2 border-slate-400">
+    <div class="card-body">
+      <h2 class="card-title text-2xl font-bold">Members</h2>
+      <p>Experienced in contributing to open-source code</p>
+      <div class="card-actions justify-end">
+        <a role="button" class="btn btn-outline " href="/members">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="card w-full md:w-1/4 bg-base-200 shadow-xl border-2 border-slate-400">
+    <div class="card-body">
+      <h2 class="card-title text-2xl font-bold">Maintainers</h2>
+      <p>Maintainers of open-source code libraries</p>
+      <div class="card-actions justify-end">
+        <a role="button" class="btn btn-outline" href="/maintainers">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="card w-full md:w-1/3 bg-base-200 shadow-xl border-2 border-slate-400">
+    <div class="card-body">
+      <h2 class="card-title text-2xl font-bold">Sponsors</h2>
+      <p>Companies interested in strengthening the community</p>
+      <div class="card-actions justify-end">
+        <a role="button" class="btn btn-outline" href="/sponsors">Read more</a>
+      </div>
+    </div>
+  </div>
+  <div class="card w-full md:w-1/3 bg-base-200 shadow-xl border-2 border-slate-400">
+    <div class="card-body">
+      <h2 class="card-title text-2xl font-bold">Recruiters</h2>
+      <p>Recruit talented programmers</p>
+      <div class="card-actions justify-end">
+        <a role="button" class="btn btn-outline" href="/recruiters">Read more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
   <p class="prose">
     Maakaf Community is an Israeli open-source community. We aim to encourage innovation, creativity, and addressing the existing issues in the development world today. Many developers rely on open-source code libraries to support the existing codebase, and some of the most commonly used libraries today are open-source libraries. We want to encourage and establish a community around these libraries, making it one of the most fertile developer communities in the country. We believe that contributing to open-source code can open the door to finding unexpected talents in the development world, which can help recruiters and leaders in various companies to find quality individuals and establish their qualities more quickly than the current recruitment process. We believe that there are talented individuals with a high motivation to learn in this community, and we are delighted to have your support.
   </p>
