@@ -4,49 +4,111 @@ import BaseLayout from "@layouts/en/EnBaseLayout.astro";
 ---
 
 <BaseLayout>
-  <h1>Welcome to Maakaf community website !</h1>
+  <h1>Welcome to Maakaf community website!</h1>
 
+  <p class="prose">
+    Maakaf is an
+    <b>Israeli open-source community</b>. <br />
+    We are interested in encouraging innovation, creativity and answering the problems
+    that exist in today's development world.
+    <br />
+    Developers rely on open-source libraries to support their existing code base,
+    some of the most popular code libraries today are open-source libraries.
+    <br />
+    We are interested in encouraging the existence of this community and establishing
+    it as one of the most prolific programmers' communitiy in the country.
+    <br />
+    <br />
+    We believe that contributing to open-source can be an opening for finding unexpected
+    talents in the development world, which can help recruiters and leaders in various
+    companies to find quality people and establish their qualities quickly.
+    <br />
+    Our community is filled with talented people which are highly motivated to learn
+    and develop their skills.
+
+    <h2>
+      There are more than 1300 members in the community,<br />
+      and more than 20 active projects!
+    </h2>
+
+    <h3>The most interesting things in our community:</h3>
+    <ul>
+      <li>
+        <a href="en/members/en_projects_list"
+          >The community projects' list that you can join</a
+        >
+      </li>
+      <li>
+        <a href="https://maakaf.netlify.app/members/he_mentoring_project/"
+          >The mentoring project - experienced developers help new developers at
+          the start of their careers</a
+        >
+      </li>
+      <!-- צריך להחליף -->
+      <li>
+        <a href="https://discord.com/invite/a2VyCjRk2M" target="_blank"
+          >Join the community's Discord server</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://chat.whatsapp.com/CCFkZwKn3oD8kJoRLms7ts"
+          target="_blank">Join our silent WhatsApp group for updates only</a
+        >
+      </li>
+    </ul>
+
+    <br />
+    <h3>How can you connect to the activity in our community?</h3>
+  </p>
   <section
-    class="flex flex-wrap items-center justify-center not-prose md:mx-[-8rem] md:w-[48rem] gap-4"
+    class="flex flex-wrap items-center justify-center not-prose md:mx-[-8rem] gap-4"
   >
     <BigLink 
       title="Newbies" 
-      text="TARGEM OTI LE-INGLISH" 
-      href="/en/newbies" 
-    />
-    <BigLink 
-      title="Members" 
-      text="TARGEM OTI LE-INGLISH" 
-      href="/en/members" 
+      text="First time in open-source" 
+      href="/newbies" 
+      btnText="Read more"
+      />
+    <BigLink
+      title="Members"
+      text="Experienced in contributing to open-source code"
+      href="/members"
+      btnText="Read more"
     />
     <BigLink
       title="Maintainers"
-      text="TARGEM OTI LE-INGLISH"
-      href="/en/maintainers"
+      text="Maintainers of open-source code libraries"
+      href="/maintainers"
+      btnText="Read more"
     />
     <BigLink
       title="Sponsors"
-      text="TARGEM OTI LE-INGLISH"
-      href="/en/sponsors"
+      text="Companies interested in strengthening the community"
+      href="/sponsors"
+      btnText="Read more"
     />
     <BigLink
       title="Recruiters"
-      text="TARGEM OTI LE-INGLISH"
-      href="/en/recruiters"
+      text="Recruit talented programmers"
+      href="/recruiters"
+      btnText="Read more"
     />
   </section>
-  <p class="prose">
-    Maakaf Community is an Israeli open-source community. We aim to encourage innovation, creativity, and addressing the existing issues in the development world today. Many developers rely on open-source code libraries to support the existing codebase, and some of the most commonly used libraries today are open-source libraries. We want to encourage and establish a community around these libraries, making it one of the most fertile developer communities in the country. We believe that contributing to open-source code can open the door to finding unexpected talents in the development world, which can help recruiters and leaders in various companies to find quality individuals and establish their qualities more quickly than the current recruitment process. We believe that there are talented individuals with a high motivation to learn in this community, and we are delighted to have your support.
-  </p>
+
+  <br />
 
   <section class="flex flex-col max-w-[80ch] prose">
     <p>
-      If you are <b>brand new programmers</b> to the world of open source code, <br />
-      we have created a special guide just for you, and we've also uploaded YouTube videos to teach you what the first steps are to join the open source code world.
+      If you are <b>brand new programmers</b> to the world of open source code, <br
+      />
+      we have created a special guide just for you, and we've also uploaded YouTube
+      videos to teach you what the first steps are to join the open source code world.
     </p>
 
     <p>
-      If you are <b>experienced programmers contributing to open source code</b>, <br />
+      If you are <b>experienced programmers contributing to open source code</b
+      >, <br />
       you are welcome to join our community activities - <br />
       how to participate in Maakaf's community activities?
     </p>
@@ -58,14 +120,16 @@ import BaseLayout from "@layouts/en/EnBaseLayout.astro";
     </p>
 
     <p>
-      If you are <b>companies interested in strengthening the community</b>, <br />
+      If you are <b>companies interested in strengthening the community</b>, <br
+      />
       you are welcome to join the community as sponsors - <br />
       how to become a sponsor of Maakaf's community?
     </p>
 
     <p>
       If you are <b>recruiting programmers</b>, <br />
-      you are welcome to get to know the community members and find a programmer among them who suits your job - <br />
+      you are welcome to get to know the community members and find a programmer
+      among them who suits your job - <br />
       how to recruit programmers through the Maakaf community?
     </p>
   </section>
