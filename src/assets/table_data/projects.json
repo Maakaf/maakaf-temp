@@ -1,7 +1,15 @@
 [
   {
+    "githubLink": "https://github.com/thecyberworld/TheCyberHUB",
+    "discordLink": "https://discord.gg/qBxar4pVZb"
+  },
+  {
     "githubLink": "https://github.com/baruchiro/url-title-preview",
     "discordLink": "https://discord.gg/t43nA3r5Zb"
+  },
+  {
+    "githubLink": "https://github.com/baruchiro/gh-local-changes",
+    "discordLink": "https://discord.gg/yju2tS79xV"
   },
   {
     "githubLink": "https://github.com/progit2-heb/progit2",
@@ -58,10 +66,6 @@
   {
     "githubLink": "https://github.com/keephq/keep",
     "discordLink": "https://discord.gg/zH6KYNZv3b"
-  },
-  {
-    "githubLink": "https://github.com/noams24/Kef-Code",
-    "discordLink": "https://discord.gg/Mht9WcSKqp"
   },
   {
     "githubLink": "https://github.com/DavidMarom/redberry-crm",
