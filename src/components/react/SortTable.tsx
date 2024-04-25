@@ -19,7 +19,7 @@ interface GitHubRepository {
   html_url: string;
   description: string;
   stargazers_count: number;
-  updated_at: string;
+  last_commit: string;
   short_description: string;
   discord_link: string;
 }
@@ -41,6 +41,27 @@ useEffect(() => {
     try {
       const octokit = new Octokit();
 
+      async function getLastCommitDate(owner, repo, defaultBranch) {
+        try {
+          const commits = await octokit.rest.repos.listCommits({
+            owner,
+            repo,
+            sha: defaultBranch,
+            per_page: 1, // Only fetch the latest commit
+          });
+      
+          if (commits.data.length > 0) {
+            const lastCommitDate = commits.data[0].commit.committer.date;
+            return lastCommitDate;
+          } else {
+            throw new Error("No commits found in the default branch.");
+          }
+        } catch (error) {
+          console.error("Error fetching commit data:", error);
+          throw error;
+        }
+      }
+
       const repositoriesData = await Promise.all(
         projectData.map(async ({ githubLink, discordLink }) => {
           const [owner, repo] = githubLink.split('/').slice(-2);
@@ -52,7 +73,7 @@ useEffect(() => {
             html_url: data.html_url,
             description: data.description || "",
             stargazers_count: data.stargazers_count || 0,
-            updated_at: data.updated_at,
+            last_commit: await getLastCommitDate(owner, repo, data.default_branch),
             short_description: data.description
               ? data.description.split("\n")[0]
               : "",
@@ -166,7 +187,7 @@ useEffect(() => {
         header: () => "Stars",
       },
       {
-        accessorKey: "updated_at",
+        accessorKey: "last_commit",
         header: () => (
           <>
             Last
@@ -175,7 +196,7 @@ useEffect(() => {
           </>
         ),
         cell: (info) =>
-          new Date(info.row.original.updated_at).toLocaleDateString("he-il"),
+          new Date(info.row.original.last_commit).toLocaleDateString("he-il"),
       },
     ],
     []
@@ -196,7 +217,7 @@ useEffect(() => {
   });
 
   const shouldSort = (columnId: string) => {
-    const sortableColumns = ["language", "stargazers_count", "updated_at"];
+    const sortableColumns = ["language", "stargazers_count", "last_commit"];
     return sortableColumns.includes(columnId);
   };
 
