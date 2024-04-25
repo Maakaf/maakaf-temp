@@ -19,7 +19,7 @@ interface GitHubRepository {
   html_url: string;
   description: string;
   stargazers_count: number;
-  pushed_at: string;
+  updated_at: string;
   short_description: string;
   discord_link: string;
 }
@@ -52,7 +52,7 @@ useEffect(() => {
             html_url: data.html_url,
             description: data.description || "",
             stargazers_count: data.stargazers_count || 0,
-            pushed_at: data.pushed_at,
+            updated_at: data.updated_at,
             short_description: data.description
               ? data.description.split("\n")[0]
               : "",
@@ -166,7 +166,7 @@ useEffect(() => {
         header: () => "Stars",
       },
       {
-        accessorKey: "pushed_at",
+        accessorKey: "updated_at",
         header: () => (
           <>
             Last
@@ -175,7 +175,7 @@ useEffect(() => {
           </>
         ),
         cell: (info) =>
-          new Date(info.row.original.pushed_at).toLocaleDateString("he-il"),
+          new Date(info.row.original.updated_at).toLocaleDateString("he-il"),
       },
     ],
     []
@@ -196,7 +196,7 @@ useEffect(() => {
   });
 
   const shouldSort = (columnId: string) => {
-    const sortableColumns = ["language", "stargazers_count", "pushed_at"];
+    const sortableColumns = ["language", "stargazers_count", "updated_at"];
     return sortableColumns.includes(columnId);
   };
 
