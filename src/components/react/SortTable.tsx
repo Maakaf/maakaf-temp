@@ -41,7 +41,7 @@ useEffect(() => {
     try {
       const octokit = new Octokit();
 
-      async function getLastCommitDate(owner, repo, defaultBranch) {
+      async function getLastCommitDate(owner: string, repo: string, defaultBranch: string) {
         try {
           const commits = await octokit.rest.repos.listCommits({
             owner,
@@ -51,7 +51,7 @@ useEffect(() => {
           });
       
           if (commits.data.length > 0) {
-            const lastCommitDate = commits.data[0].commit.committer.date;
+            const lastCommitDate = commits?.data[0]?.commit?.committer?.date;
             return lastCommitDate;
           } else {
             throw new Error("No commits found in the default branch.");
@@ -82,8 +82,8 @@ useEffect(() => {
         })
       );
 
-      setRepositories(repositoriesData);
-      setFilteredData(repositoriesData);
+      setRepositories(repositoriesData as GitHubRepository[]);
+      setFilteredData(repositoriesData as GitHubRepository[]);
       setLoading(false);
     } catch (error) {
       console.error("Error fetching data from GitHub:", error);
