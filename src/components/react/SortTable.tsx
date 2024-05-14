@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-table";
 import { ClipLoader } from "react-spinners";
 import { Octokit } from "@octokit/rest";
+import {debounce} from "lodash";
 
 import githubLogo from "@assets/images/members/github-logo.png";
 import discordLogo from "@assets/images/members/discord-logo.png";
@@ -36,8 +37,7 @@ function SortTable({ projectData }: { projectData: ProjectData[] }) {
   const [loading, setLoading] = useState(true);
   const [languageFilter, setLanguageFilter] = useState<string | null>(null);
 
-useEffect(() => {
-  (async () => {
+  const debouncedGitHubApiCall = debounce(async () => {
     try {
       const octokit = new Octokit();
 
@@ -88,8 +88,12 @@ useEffect(() => {
     } catch (error) {
       console.error("Error fetching data from GitHub:", error);
     }
-  })();
-}, [projectData]);
+
+  }, 500);
+
+  useEffect(() => {
+    debouncedGitHubApiCall();
+  }, [projectData]);
 
   useEffect(() => {
     if (languageFilter) {
