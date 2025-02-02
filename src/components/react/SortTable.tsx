@@ -62,25 +62,7 @@ function SortTable({ projectData }: { projectData: ProjectData[] }) {
         }
       }
 
-      const repositoriesData = await Promise.all(
-        projectData.map(async ({ githubLink, discordLink }) => {
-          const [owner, repo] = githubLink.split('/').slice(-2);
-          const { data } = await octokit.repos.get({ owner, repo });
-
-          return {
-            name: data.name,
-            language: data.language || "N/A",
-            html_url: data.html_url,
-            description: data.description || "",
-            stargazers_count: data.stargazers_count || 0,
-            last_commit: await getLastCommitDate(owner, repo, data.default_branch),
-            short_description: data.description
-              ? data.description.split("\n")[0]
-              : "",
-            discord_link: discordLink || "",
-          };
-        })
-      );
+      const repositoriesData = await fetch("https://projectsapi-qy8t.onrender.com/").then((res) => res.json());
 
       setRepositories(repositoriesData as GitHubRepository[]);
       setFilteredData(repositoriesData as GitHubRepository[]);
